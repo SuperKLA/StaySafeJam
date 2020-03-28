@@ -6,6 +6,8 @@ public class Food : MonoBehaviour
     public Rigidbody         OwnRigidBody;
     public MeshCollider      OwnCollider;
     public MeshFilter        OwnMeshfilter;
+    public Texture           InnerTexture;
+    public Material          OwnMaterial;
 
     public string       name;
     public FoodCategory category;
@@ -29,7 +31,7 @@ public class Food : MonoBehaviour
     private void OnDragEnd()
     {
         CupComeCloserManager.Current.DisableComeCloser();
-        
+
         this.OwnRigidBody.useGravity       = true;
         this.OwnRigidBody.detectCollisions = true;
     }
@@ -37,7 +39,7 @@ public class Food : MonoBehaviour
     private void OnDragEnabled()
     {
         CupComeCloserManager.Current.SetCupComeCloser(this.gameObject);
-        
+
         this.OwnRigidBody.angularVelocity = Vector3.zero;
         this.OwnRigidBody.velocity        = Vector3.zero;
 
