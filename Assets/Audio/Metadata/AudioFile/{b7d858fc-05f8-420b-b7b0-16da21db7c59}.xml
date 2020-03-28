@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{b7d858fc-05f8-420b-b7b0-16da21db7c59}">
+		<property name="assetPath">
+			<value>sfx_chop_pizza_03.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.39988662131519276</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{05589786-7a50-4b8f-bff7-b70e6f34cc2f}</destination>
+		</relationship>
+	</object>
+</objects>
