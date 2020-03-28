@@ -84,6 +84,7 @@
     <Compile Include="Assets\Scripts\Cutter.cs" />
     <Compile Include="Assets\Scripts\CuttingBoard.cs" />
     <Compile Include="Assets\Scripts\Demo.cs" />
+    <Compile Include="Assets\Scripts\DontDestroyOnLoad.cs" />
     <Compile Include="Assets\Scripts\Dragable.cs" />
     <Compile Include="Assets\Scripts\Food\Food.cs" />
     <Compile Include="Assets\Scripts\Food\FoodCategory.cs" />
@@ -93,6 +94,9 @@
     <Compile Include="Assets\Scripts\Homeless\Homeless.cs" />
     <Compile Include="Assets\Scripts\Homeless\HomelessConfig.cs" />
     <Compile Include="Assets\Scripts\Knife.cs" />
+    <Compile Include="Assets\Scripts\Menue\AudioFiles.cs" />
+    <Compile Include="Assets\Scripts\Menue\EndScreen.cs" />
+    <Compile Include="Assets\Scripts\Menue\StartMenue.cs" />
     <None Include="Assets\Shader\ProjectorShader.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>F:/Repositorys/StaySafeJam/StaySafeJam/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
