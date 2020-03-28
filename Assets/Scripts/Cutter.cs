@@ -34,8 +34,17 @@ public class Cutter : MonoBehaviour
             var cutObj = cutThis[c];
             var cutObjFood = cutObj.GetComponent<Food>();
             var material = cutObjFood.OwnMaterial;
-            var textureRegion = material.GetTextureRegion(0, 0, 1024, 1024);
-            var pieces = SlicerExtensions.SliceInstantiate(cutObj, position, normal, textureRegion, material);
+
+            GameObject[] pieces;
+            if (cutObjFood.InnerTexture != null)
+            {
+                var textureRegion = material.GetTextureRegion(0, 0, 1024, 1024);
+                pieces = SlicerExtensions.SliceInstantiate(cutObj, position, normal, textureRegion, material);
+            }
+            else
+            {
+                pieces = SlicerExtensions.SliceInstantiate(cutObj, position, normal, material);
+            }
 
             if (pieces == null) continue;
             
