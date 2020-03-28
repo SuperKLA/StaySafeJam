@@ -67,6 +67,28 @@
      <Compile Include="Assets\Plugins\Editor\Favority\Swing.Editor\MiscEditorUtility.cs" />
      <Compile Include="Assets\Plugins\Editor\Favority\Swing.Editor\TextInputDialog.cs" />
      <Compile Include="Assets\Plugins\Editor\Favority\Swing.Engine\BaseScriptableObject.cs" />
+     <Compile Include="Assets\Plugins\FMOD\addons\ResonanceAudio\Editor\FmodResonanceAudioRoomEditor.cs" />
+     <Compile Include="Assets\Plugins\FMOD\src\Editor\BankRefDrawer.cs" />
+     <Compile Include="Assets\Plugins\FMOD\src\Editor\CreateEventPopup.cs" />
+     <Compile Include="Assets\Plugins\FMOD\src\Editor\EditorBankRef.cs" />
+     <Compile Include="Assets\Plugins\FMOD\src\Editor\EditorEventRef.cs" />
+     <Compile Include="Assets\Plugins\FMOD\src\Editor\EditorParamRef.cs" />
+     <Compile Include="Assets\Plugins\FMOD\src\Editor\EditorUtils.cs" />
+     <Compile Include="Assets\Plugins\FMOD\src\Editor\EventBrowser.cs" />
+     <Compile Include="Assets\Plugins\FMOD\src\Editor\EventCache.cs" />
+     <Compile Include="Assets\Plugins\FMOD\src\Editor\EventManager.cs" />
+     <Compile Include="Assets\Plugins\FMOD\src\Editor\EventRefDrawer.cs" />
+     <Compile Include="Assets\Plugins\FMOD\src\Editor\FindAndReplace.cs" />
+     <Compile Include="Assets\Plugins\FMOD\src\Editor\LogViewer.cs" />
+     <Compile Include="Assets\Plugins\FMOD\src\Editor\ParamRefDrawer.cs" />
+     <Compile Include="Assets\Plugins\FMOD\src\Editor\SettingsEditor.cs" />
+     <Compile Include="Assets\Plugins\FMOD\src\Editor\StudioBankLoaderEditor.cs" />
+     <Compile Include="Assets\Plugins\FMOD\src\Editor\StudioEventEmitterEditor.cs" />
+     <Compile Include="Assets\Plugins\FMOD\src\Editor\StudioEventEmitterGizmoDrawer.cs" />
+     <Compile Include="Assets\Plugins\FMOD\src\Editor\StudioGlobalParameterTriggerEditor.cs" />
+     <Compile Include="Assets\Plugins\FMOD\src\Editor\StudioListenerEditor.cs" />
+     <Compile Include="Assets\Plugins\FMOD\src\Editor\StudioParameterTriggerEditor.cs" />
+     <Compile Include="Assets\Plugins\FMOD\src\Editor\Timeline\FMODEventPlayableEditor.cs" />
      <None Include="Assets\Plugins\Editor\Favority\readme.txt" />
  <Reference Include="UnityEditor.TestRunner">
  <HintPath>C:/GameProjects/StaySafeJam/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
@@ -677,6 +699,12 @@
  <Reference Include="Boo.Lang">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{2E353128-066B-B491-9374-8C214242B0EB}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -109,7 +109,76 @@
      <Compile Include="Assets\Scripts\Menue\EndScreen.cs" />
      <Compile Include="Assets\Scripts\Menue\StartMenue.cs" />
      <Compile Include="Assets\Scripts\Utils.cs" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{15daa500-1097-4a2b-b750-71c0b2722db7}.xml" />
+     <None Include="Assets\Audio\Metadata\Mixer.xml" />
+     <None Include="Assets\Audio\Metadata\Event\{f5cdb6f5-8565-4bc6-a7e5-9cc9c2f3c859}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{65f96c1e-137c-4c53-ad24-02c0a98b3c59}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{f46a3b31-d065-40c5-bb9e-d31e8d916424}.xml" />
+     <None Include="Assets\Audio\Metadata\Master.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{b0c9a840-719b-4245-b098-7a2946e8b140}.xml" />
+     <None Include="Assets\Audio\Metadata\Platform\{5cc4b018-39de-4110-9454-1058b505c3f1}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{c5458890-d4b0-4484-b162-f902426f20df}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{e0f4015a-db23-4128-9332-9cd7cdcacb49}.xml" />
+     <None Include="Assets\Audio\Metadata\EncodingSetting\{e32f2fd9-d767-4e8d-90b7-0732a2077b0c}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{42ea8c2f-6c1e-4765-b30f-d83e145a3e7a}.xml" />
+     <None Include="Assets\Audio\Metadata\Asset\{05589786-7a50-4b8f-bff7-b70e6f34cc2f}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{4c302d4c-3604-409f-b34d-acf0d7da4580}.xml" />
+     <None Include="Assets\Audio\Metadata\EventFolder\{39ebc34b-860a-4d4b-aab9-804d37f0b7f2}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{3d946ceb-e4b5-48c8-b010-d89b984633c4}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{93d24ba7-c586-4d2a-9abc-848c20831c44}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{4ee573a3-f2c8-44be-9bac-39e146e0df87}.xml" />
+     <None Include="Assets\Audio\Metadata\Workspace.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{4e58284e-08f6-4893-a708-f48394826c07}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{07067905-4038-4877-b2f7-2fbdacd40fe9}.xml" />
+     <None Include="Assets\Audio\Metadata\Event\{c5f14c0b-91f8-43c2-9be8-a833d0876581}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{5bd2ebf5-a18e-40a2-941c-8b4cbe8f21c3}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{9faa1ca9-3f68-4b3d-b128-715eae25cb70}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{6072d80f-52e8-4d01-b85c-87cb4c3c45a1}.xml" />
+     <None Include="Assets\Audio\Metadata\Tags.xml" />
+     <None Include="Assets\Audio\Metadata\Event\{5fc3f47d-d479-400d-90ee-77e61927e052}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{ed552bc1-b7b5-4726-8902-a805292d9011}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{95937c97-82c1-4d2e-a1d3-a5c8bf975e73}.xml" />
+     <None Include="Assets\Audio\Metadata\ParameterPresetFolder\{fb90708d-728a-4043-8a15-869603bd6cb3}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{5a20dc78-3c39-4875-b216-86dd793b0036}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{8f6d583f-b69d-4129-b2a6-d8c9a8b8cce0}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{b25b0f2e-f90e-46d7-b666-4c22bd37a64e}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{1e0fa546-f684-4c89-93ba-a40a5f3ceb9b}.xml" />
+     <None Include="Assets\Audio\Metadata\EventFolder\{0e3b3c7c-5969-40ad-b1d5-c18f696bee58}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{d02d40f7-0da5-426c-bce6-a99fc5bff21c}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{06600d00-f8d8-4f0f-b9b7-a1f6f89ced0e}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{b7d858fc-05f8-420b-b7b0-16da21db7c59}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{361317ce-4845-48a8-a461-4ea5a9b35a9a}.xml" />
+     <None Include="Assets\Audio\Metadata\EffectPresetFolder\{99900e7e-5afc-45de-882f-97e3fa6ed085}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{2a81555a-0878-48b3-80df-d5c8096ec373}.xml" />
+     <None Include="Assets\Audio\Metadata\EventFolder\{5de8b92a-95ed-492a-8538-7c0b04b24eab}.xml" />
      <None Include="Assets\Shader\ProjectorShader.shader" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{cc09a574-a856-4474-b7f3-808790227699}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{31667b07-2aa4-4a32-924c-c7fbeccb2bff}.xml" />
+     <None Include="Assets\Audio\Metadata\Bank\{00ec1bbf-0841-4f20-8829-0c3a52470703}.xml" />
+     <None Include="Assets\Audio\Metadata\Return\{4ff3f18b-39bc-4f3d-8b9c-dcb1c493b3a1}.xml" />
+     <None Include="Assets\Audio\Metadata\Event\{df887125-96c3-4a94-862d-9114425159b0}.xml" />
+     <None Include="Assets\Audio\Metadata\Event\{4ff9408d-7005-4474-b10c-e423150ba521}.xml" />
+     <None Include="Assets\Audio\Metadata\Event\{a4fbaa21-4145-438c-9ab5-7f265c700ea0}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{3b837afa-5b19-4230-a98d-b7d2d4d19117}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{1182309f-5559-4ea0-b6e1-25695a3fb5ac}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{b630878f-3eb4-4b2c-b7ce-e30e6df61c8f}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{cecedd88-770e-41ac-8ffb-8bfa7faab84d}.xml" />
+     <None Include="Assets\Audio\Metadata\SnapshotGroup\{0d63f252-ca57-493e-a861-69b00e60234c}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{67dc0ce0-61e6-4dfb-8025-d64cd6b41d33}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{5496e6de-3039-4b6e-9bc2-74d8b1864417}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{8b983cbb-b485-4d5c-a552-db4cc4554221}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{440c8110-7e53-44d7-90da-e926ab405fb6}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{90958ffe-25ad-484b-990b-249f64b3a584}.xml" />
+     <None Include="Assets\Audio\Metadata\Event\{0b1ee124-add3-478a-b2ad-898b0469ece9}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{75bcf686-6925-40a6-ba95-2a8762a63ada}.xml" />
+     <None Include="Assets\Audio\Metadata\BankFolder\{2306b8cf-757e-41fa-9d14-ef72d345684d}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{2355ea71-02a0-462c-8099-1cfb60ff5cb7}.xml" />
+     <None Include="Assets\Audio\Metadata\Event\{331edb4c-0b01-4d9d-b6c5-41870e6c212c}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{359fa89b-82ae-42ef-a8d0-86c845ad6816}.xml" />
+     <None Include="Assets\Audio\Metadata\Event\{1f13b019-dd3c-426c-8c72-657e68f2ac47}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{ea130f4a-daa0-4b67-a079-f6166df3b0eb}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{b050a616-1e5b-40be-b07f-acebf641dccf}.xml" />
+     <None Include="Assets\Audio\Metadata\AudioFile\{0111b5ed-4ef7-4653-9fe7-804a236fe7ab}.xml" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/GameProjects/StaySafeJam/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
@@ -683,6 +752,12 @@
  <Reference Include="Boo.Lang">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{2E353128-066B-B491-9374-8C214242B0EB}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
