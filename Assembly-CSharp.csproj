@@ -58,6 +58,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\MeshCutting-Lib\CameraOrbit.cs" />
+     <Compile Include="Assets\MeshCutting-Lib\DrawBounds.cs" />
+     <Compile Include="Assets\MeshCutting-Lib\MeshCutting\Intersections.cs" />
+     <Compile Include="Assets\MeshCutting-Lib\MeshCutting\MeshCutter.cs" />
+     <Compile Include="Assets\MeshCutting-Lib\MeshCutting\MeshUtils.cs" />
+     <Compile Include="Assets\MeshCutting-Lib\MeshCutting\TempMesh.cs" />
+     <Compile Include="Assets\MeshCutting-Lib\MouseSlice.cs" />
+     <Compile Include="Assets\MeshCutting-Lib\ObjectManager.cs" />
+     <Compile Include="Assets\MeshCutting-Lib\ScreenLineRenderer.cs" />
+     <Compile Include="Assets\Scripts\DTO\DTOConfig.cs" />
+     <Compile Include="Assets\Scripts\DTO\GameConfigDTO.cs" />
      <Compile Include="Assets\Scripts\Demo.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/GameProjects/StaySafeJam/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

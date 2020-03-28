@@ -1,45 +1,69 @@
-﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Demo : MonoBehaviour
-{
-    public LineRenderer OwnLineRenderer;
+public class MouseSlice : MonoBehaviour {
+
+    public GameObject plane;
     public Transform ObjectContainer;
+
     // How far away from the slice do we separate resulting objects
     public float separation;
-    public Vector3 NormalDirCutPlane = Vector3.forward;
 
     // Do we draw a plane object associated with the slice
-    private Plane slicePlane = new Plane();    
+    private Plane slicePlane = new Plane();
+    public bool drawPlane;
     
+    // Reference to the line renderer
+    public ScreenLineRenderer lineRenderer;
+
     private MeshCutter meshCutter;
     private TempMesh biggerMesh, smallerMesh;
-    
-    // Start is called before the first frame update
-    void Start()
+
+    #region Utility Functions
+
+    void DrawPlane(Vector3 start, Vector3 end, Vector3 normalVec)
     {
+        Quaternion rotate = Quaternion.FromToRotation(Vector3.up, normalVec);
+
+        plane.transform.localRotation = rotate;
+        plane.transform.position = (end + start) / 2;
+        plane.SetActive(true);
+    }
+
+    #endregion
+
+    // Use this for initialization
+    void Start () {
+        // Initialize a somewhat big array so that it doesn't resize
         meshCutter = new MeshCutter(256);
+	}
+
+    private void OnEnable()
+    {
+        lineRenderer.OnLineDrawn += OnLineDrawn;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDisable()
     {
-        
+        lineRenderer.OnLineDrawn -= OnLineDrawn;
     }
 
-    [ContextMenu("CutMe")]
-    void CutMe()
+    private void OnLineDrawn(Vector3 start, Vector3 end, Vector3 depth)
     {
-        var pointOnCutPlane0 = OwnLineRenderer.GetPosition(0);
-        var pointOnCutPlane1 = OwnLineRenderer.GetPosition(1);
-        var dir = (pointOnCutPlane0 - pointOnCutPlane1).normalized;
-        
-        var normalVec = Vector3.Cross(dir, Vector3.up);
+        var planeTangent = (end - start).normalized;
 
-        SliceObjects(pointOnCutPlane0, normalVec);
+        // if we didn't drag, we set tangent to be on x
+        if (planeTangent == Vector3.zero)
+            planeTangent = Vector3.right;
+
+        var normalVec = Vector3.Cross(depth, planeTangent);
+
+        if (drawPlane) DrawPlane(start, end, normalVec);
+
+        SliceObjects(start, normalVec);
     }
     
+
     void SliceObjects(Vector3 point, Vector3 normal)
     {
         var toSlice = GameObject.FindGameObjectsWithTag("Sliceable");
