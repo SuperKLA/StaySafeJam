@@ -10,6 +10,7 @@ public class Knife : MonoBehaviour
     public static Knife Current;
     
     public bool IsHoldingKnife;
+    public float DistanceThreshold = 3;
     private static readonly int Cut = Animator.StringToHash("Cut");
 
     private void Start()
@@ -64,7 +65,21 @@ public class Knife : MonoBehaviour
         var normal   = this.transform.right;
 
         var toSlice = GameObject.FindGameObjectsWithTag("Sliceable");
-        Cutter.Current.Cut(position, normal, toSlice);
+        var cutItems = new List<GameObject>();
+
+        for (int c = 0; c < toSlice.Length; c++)
+        {
+            var sliceable = toSlice[c];
+            var slicePosition = sliceable.transform.position;
+            var dis = Vector3.Distance(slicePosition, this.transform.position);
+            if (dis < this.DistanceThreshold)
+            {
+                cutItems.Add(sliceable);
+            }   
+        }
+        
+        
+        Cutter.Current.Cut(position, normal, cutItems.ToArray());
     }
 
     private void RotateKnife(int dir)

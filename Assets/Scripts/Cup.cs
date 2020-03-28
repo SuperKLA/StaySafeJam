@@ -30,6 +30,8 @@ public class Cup : MonoBehaviour
 
         CupComeCloserManager.Current.IsHoldingFood = false;
 
+        if (CupComeCloserManager.Current.LastTarget == null || !other.gameObject.Equals(CupComeCloserManager.Current.LastTarget)) return;
+        
         this.FoodInCup.Add(food);
         food.transform.SetParent(this.transform);
 
@@ -64,7 +66,7 @@ public class Cup : MonoBehaviour
         if (DropValue == 0) return;
         if (CupComeCloserManager.Current.IsHoldingFood) return;
 
-        OnFoodIsComingCloser(this.DropValue - Time.deltaTime);
+        OnFoodIsComingCloser(this.DropValue - Time.deltaTime*2);
         //
         // if (DropValue >= 0) return;
         //

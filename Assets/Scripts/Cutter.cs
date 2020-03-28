@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using EzySlice;
+﻿using EzySlice;
 using UnityEngine;
 using Plane = UnityEngine.Plane;
 
@@ -34,7 +33,9 @@ public class Cutter : MonoBehaviour
         {
             var cutObj = cutThis[c];
             var cutObjFood = cutObj.GetComponent<Food>();
-            var pieces = SlicerExtensions.SliceInstantiate(cutObj, position, normal, this.Banana);
+            var material = cutObjFood.OwnMaterial;
+            var textureRegion = material.GetTextureRegion(0, 0, 1024, 1024);
+            var pieces = SlicerExtensions.SliceInstantiate(cutObj, position, normal, textureRegion, material);
 
             if (pieces == null) continue;
             
@@ -61,6 +62,8 @@ public class Cutter : MonoBehaviour
                 food.OwnCollider = collider;
                 food.OwnRigidBody = rigid;
                 food.OwnMeshfilter = meshfilter;
+                food.OwnMaterial = cutObjFood.OwnMaterial;
+                food.InnerTexture = cutObjFood.InnerTexture;
                 food.name = cutObjFood.name;
                 food.Volume = volume;
                 food.Calories = cutObjFood.Calories * partFactor;

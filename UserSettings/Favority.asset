@@ -25,4 +25,8 @@ MonoBehaviour:
     sceneObjectId: -1
     unityObjectName: Scripts
     customName: 
+  - unityObject: {fileID: 102900000, guid: e7b1d3f426c9f254f903f217b0e1cb12, type: 3}
+    sceneObjectId: -1
+    unityObjectName: Helper
+    customName: 
   scenes: []
