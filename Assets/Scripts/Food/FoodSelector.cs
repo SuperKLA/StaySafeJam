@@ -15,6 +15,8 @@ public class FoodSelector : MonoBehaviour
 
     public Food GetFood()
     {
+        if (notEatenFoods.Count <= 0)
+            return null;
         int index = Random.Range(0, notEatenFoods.Count - 1);
         Food selectedFood = notEatenFoods[index];
         notEatenFoods.RemoveAt(index);
