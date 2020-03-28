@@ -59,9 +59,28 @@ public class Draggable : MonoBehaviour
 
             //convert the screen mouse position to world point and adjust with offset
             var curPosition = Camera.main.ScreenToWorldPoint(curScreenSpace) + offset;
+            var recevoir = this.target.GetComponent<DraggableRecevoir>();
+
+            if (recevoir != null && recevoir.MaxMoveBounds.HasValue)
+            {
+                var bounds = recevoir.MaxMoveBounds.Value;
+                var pos = new Vector3(curPosition.x, 0, curPosition.z);
+
+                if (!bounds.Contains(pos))
+                    return;
+            }
 
             //update the position of the object in the world
-            target.transform.position = curPosition;
+            var rigid = this.target.GetComponent<Rigidbody>();
+            if (rigid != null)
+            {
+                rigid.MovePosition(curPosition);
+            }
+            else
+            {
+                target.transform.position = curPosition;    
+            }
+            
         }
     }
 
