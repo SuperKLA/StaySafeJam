@@ -19,7 +19,6 @@ namespace SSJ
     public class GameConfigDTO : DTOConfig<GameConfig>, IGameConfig
     {
         
-
         public override GameConfig ToDTO()
         {
             var result = new GameConfig();
