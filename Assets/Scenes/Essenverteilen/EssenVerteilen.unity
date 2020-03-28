@@ -1192,6 +1192,7 @@ MonoBehaviour:
   OwnAnimator: {fileID: 1833977916}
   KnifeDragable: {fileID: 1833977913}
   IsHoldingKnife: 0
+  DistanceThreshold: 0.3
 --- !u!114 &1833977913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1822,11 +1823,6 @@ PrefabInstance:
       propertyPath: Cups.Array.data[3]
       value: 
       objectReference: {fileID: 1999404060}
-    - target: {fileID: 3177508849846601665, guid: a50d79f1a7ab1644dba4038b5be569ad,
-        type: 3}
-      propertyPath: DistanceThreshold
-      value: 0.25
-      objectReference: {fileID: 0}
     - target: {fileID: 3177508849846601666, guid: a50d79f1a7ab1644dba4038b5be569ad,
         type: 3}
       propertyPath: m_Name

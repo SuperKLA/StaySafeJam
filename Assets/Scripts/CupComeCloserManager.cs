@@ -9,6 +9,7 @@ public class CupComeCloserManager : MonoBehaviour
     
     public List<Cup> Cups = new List<Cup>();
     public GameObject Target;
+    public GameObject LastTarget;
     public float DistanceThreshold;
     public bool IsHoldingFood;
 
@@ -21,11 +22,13 @@ public class CupComeCloserManager : MonoBehaviour
     {
         IsHoldingFood = true;
         this.Target = obj;
+        this.LastTarget = obj;
     }
     
     public void DisableComeCloser()
     {
         this.Target = null;
+        IsHoldingFood = false;
     }
 
     private void Update()

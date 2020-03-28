@@ -49,4 +49,5 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   Target: {fileID: 0}
-  DistanceThreshold: 0.3
+  DistanceThreshold: 0.2
+  IsHoldingFood: 0
