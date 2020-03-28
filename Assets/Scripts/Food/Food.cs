@@ -28,12 +28,16 @@ public class Food : MonoBehaviour
 
     private void OnDragEnd()
     {
+        CupComeCloserManager.Current.DisableComeCloser();
+        
         this.OwnRigidBody.useGravity       = true;
         this.OwnRigidBody.detectCollisions = true;
     }
 
     private void OnDragEnabled()
     {
+        CupComeCloserManager.Current.SetCupComeCloser(this.gameObject);
+        
         this.OwnRigidBody.angularVelocity = Vector3.zero;
         this.OwnRigidBody.velocity        = Vector3.zero;
 

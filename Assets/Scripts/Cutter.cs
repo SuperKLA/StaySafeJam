@@ -42,6 +42,8 @@ public class Cutter : MonoBehaviour
             {
                 var piece = pieces[i];
                 piece.name = cutObjFood.name;
+                piece.transform.position = cutObj.transform.position + piece.transform.localPosition;
+                
                 var collider = piece.AddComponent<MeshCollider>();
                 collider.convex = true;
                 
