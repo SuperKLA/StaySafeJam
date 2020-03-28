@@ -5,10 +5,12 @@ using UnityEngine;
 
 public class Knife : MonoBehaviour
 {
+    public Animator OwnAnimator;
     public Dragable KnifeDragable;
     public static Knife Current;
     
     public bool IsHoldingKnife;
+    private static readonly int Cut = Animator.StringToHash("Cut");
 
     private void Start()
     {
@@ -33,15 +35,16 @@ public class Knife : MonoBehaviour
         if (!this.IsHoldingKnife) return;
         
         
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetKeyUp(KeyCode.Space) || Input.GetMouseButtonUp(1))
         {
             Debug.Log("Macht jetzt ein schnitt");
 
-            var position = this.KnifeDragable.CurrentDragPosition;
-            var normal = this.transform.right;
-
-            var toSlice = GameObject.FindGameObjectsWithTag("Sliceable");
-            Cutter.Current.Cut(position, normal, toSlice);
+            OwnAnimator.SetTrigger(Cut);
+            // var position = this.KnifeDragable.CurrentDragPosition;
+            // var normal = this.transform.right;
+            //
+            // var toSlice = GameObject.FindGameObjectsWithTag("Sliceable");
+            // Cutter.Current.Cut(position, normal, toSlice);
         }
         
         if (Input.GetKey(KeyCode.A))
@@ -52,6 +55,16 @@ public class Knife : MonoBehaviour
         {
             this.RotateKnife(1);
         }
+    }
+
+    public void OnKnifeIsCutting()
+    {
+        //Sound spielen
+        var position = this.KnifeDragable.CurrentDragPosition;
+        var normal   = this.transform.right;
+
+        var toSlice = GameObject.FindGameObjectsWithTag("Sliceable");
+        Cutter.Current.Cut(position, normal, toSlice);
     }
 
     private void RotateKnife(int dir)
