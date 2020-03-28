@@ -11,6 +11,9 @@ public class AudioFiles : MonoBehaviour
     //StartMenue
     public AudioClip startMenueBackgroundSound;
 
+    //StartMenue
+    public AudioClip homelessOverviewBackgroundSound;
+
     //EndScreen
     public AudioClip endScreenBackgroundSound;
 }

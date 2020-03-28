@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 538416424}
   - component: {fileID: 538416425}
   m_Layer: 0
-  m_Name: Homeless1
+  m_Name: Hausmann
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -245,7 +245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: Homeless1
-  Name: Homeless1
+  Name: Hausmann
   WellFedValue: 25
   HungerIncrease: {x: 10, y: 20}
 --- !u!1 &950718647
@@ -259,7 +259,7 @@ GameObject:
   - component: {fileID: 950718648}
   - component: {fileID: 950718649}
   m_Layer: 0
-  m_Name: Homeless2
+  m_Name: Doggo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -292,7 +292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: Homeless2
-  Name: Homeless2
+  Name: Doggo
   WellFedValue: 25
   HungerIncrease: {x: 10, y: 20}
 --- !u!1 &1235437679
@@ -358,7 +358,7 @@ GameObject:
   - component: {fileID: 1332289578}
   - component: {fileID: 1332289579}
   m_Layer: 0
-  m_Name: Homeless3
+  m_Name: MuetzenFrau
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -391,7 +391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: Homeless3
-  Name: Homeless3
+  Name: MuetzenFrau
   WellFedValue: 25
   HungerIncrease: {x: 10, y: 20}
 --- !u!1 &1561363734
@@ -530,7 +530,7 @@ GameObject:
   - component: {fileID: 1893393269}
   - component: {fileID: 1893393268}
   m_Layer: 0
-  m_Name: Homeless4
+  m_Name: Babuschka
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -549,7 +549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: Homeless4
-  Name: Homeless4
+  Name: Babuschka
   WellFedValue: 25
   HungerIncrease: {x: 10, y: 20}
 --- !u!4 &1893393269

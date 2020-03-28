@@ -38,6 +38,6 @@ public class HomelessManager : MonoBehaviour
         var homeless = AllHomeLess.FirstOrDefault(m => m.ID.Equals(homelessId, StringComparison.OrdinalIgnoreCase));
         if (homeless == null) return;
 
-        homeless.WellFedValue = Mathf.Clamp(homeless.WellFedValue + food.Calories, 0, 100);
+        homeless.currentHunger = Mathf.Clamp(homeless.currentHunger + food.Calories, 0, 100);
     }
 }

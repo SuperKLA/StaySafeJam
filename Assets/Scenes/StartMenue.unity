@@ -482,6 +482,8 @@ MonoBehaviour:
   clickSound: {fileID: 8300000, guid: 664801587d4dcb444bfa0e63f472c7ba, type: 3}
   startMenueBackgroundSound: {fileID: 8300000, guid: a53e2b81827abc54ebd2f9a9bbb18971,
     type: 3}
+  homelessOverviewBackgroundSound: {fileID: 8300000, guid: a53e2b81827abc54ebd2f9a9bbb18971,
+    type: 3}
   endScreenBackgroundSound: {fileID: 8300000, guid: a53e2b81827abc54ebd2f9a9bbb18971,
     type: 3}
 --- !u!4 &495826443
@@ -543,7 +545,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: Homeless1
   Name: Homeless1
-  WellFedValue: 25
+  currentHunger: 0
   HungerIncrease: {x: 10, y: 20}
 --- !u!1 &620077465
 GameObject:
@@ -982,7 +984,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: Homeless2
   Name: Homeless2
-  WellFedValue: 25
+  currentHunger: 0
   HungerIncrease: {x: 10, y: 20}
 --- !u!1 &1139571654
 GameObject:
@@ -1253,7 +1255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: Homeless3
   Name: Homeless3
-  WellFedValue: 25
+  currentHunger: 0
   HungerIncrease: {x: 10, y: 20}
 --- !u!1 &1561363734
 GameObject:
@@ -1548,7 +1550,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: Homeless4
   Name: Homeless4
-  WellFedValue: 25
+  currentHunger: 0
   HungerIncrease: {x: 10, y: 20}
 --- !u!4 &1893393269
 Transform:
