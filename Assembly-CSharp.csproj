@@ -112,6 +112,7 @@
     <Compile Include="Assets\Scripts\Menue\AudioFiles.cs" />
     <Compile Include="Assets\Scripts\Menue\EndScreen.cs" />
     <Compile Include="Assets\Scripts\Menue\HomelessOverView.cs" />
+    <Compile Include="Assets\Scripts\Menue\MenueWithAudio.cs" />
     <Compile Include="Assets\Scripts\Menue\StartMenue.cs" />
     <Compile Include="Assets\Scripts\Utils.cs" />
     <None Include="Assets\Shader\ProjectorShader.shader" />

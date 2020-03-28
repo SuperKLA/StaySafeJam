@@ -1,27 +1,21 @@
 ﻿using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class EndScreen : MonoBehaviour
+public class EndScreen : MenueWithAudio
 {
     public string sceneBackClick;
-    AudioFiles audioFiles;
-    AudioSource audioSource;
 
     // Start is called before the first frame update
-    void Start()
+    new void Start()
     {
-       // StartBackgroundMusik();
+        base.Start();
+        StartBackgroundMusik();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
 
-    public void PlayClickSound()
-    {
-        audioSource.PlayOneShot(audioFiles.clickSound);
     }
 
     public void LoadScene()
@@ -29,13 +23,17 @@ public class EndScreen : MonoBehaviour
         SceneManager.LoadScene(sceneBackClick);
     }
 
-    private void StartBackgroundMusik()
+    protected override void StartBackgroundMusik()
     {
-        audioFiles = FindObjectOfType<AudioFiles>();
-        audioSource = FindObjectOfType<AudioSource>();
+        if (!AudioFilesAndSourceNotNull)
+        {
+            LogAudioError();
+            return;
+        }
 
         audioSource.clip = audioFiles.endScreenBackgroundSound;
         audioSource.loop = true;
         audioSource.Play();
     }
+
 }

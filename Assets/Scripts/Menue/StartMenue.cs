@@ -1,18 +1,17 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartMenue : MonoBehaviour
+public class StartMenue : MenueWithAudio
 {
     public string scenePlayClick;
 
-    private AudioFiles  audioFiles;
-    private AudioSource audioSource;
-    private Animator    animator;
+    private Animator animator;
 
-    void Start()
+    new void Start()
     {
-        this.StartBackgroundMusik();
+        base.Start();
         this.animator = GetComponent<Animator>();
+        this.StartBackgroundMusik();
     }
 
     public void PlayBtnCLick()
@@ -25,23 +24,8 @@ public class StartMenue : MonoBehaviour
         Application.Quit();
     }
 
-    public void PlayClickSound()
-    {
-        audioSource.PlayOneShot(audioFiles.clickSound);
-    }
-
     public void LoadScene()
     {
         SceneManager.LoadScene(scenePlayClick);
-    }
-
-    private void StartBackgroundMusik()
-    {
-        audioFiles  = FindObjectOfType<AudioFiles>();
-        audioSource = FindObjectOfType<AudioSource>();
-
-        audioSource.clip = audioFiles.startMenueBackgroundSound;
-        audioSource.loop = true;
-        audioSource.Play();
     }
 }

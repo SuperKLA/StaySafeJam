@@ -1,16 +1,15 @@
 ﻿using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class HomelessOverView : MonoBehaviour
+public class HomelessOverView : MenueWithAudio
 {
 
     public string sceneNextClick;
-    AudioFiles audioFiles;
-    AudioSource audioSource;
 
-    public void PlayClickSound()
+    new void Start()
     {
-        audioSource.PlayOneShot(audioFiles.clickSound);
+        base.Start();
+        StartBackgroundMusik();
     }
 
     public void LoadScene()
@@ -18,14 +17,19 @@ public class HomelessOverView : MonoBehaviour
         SceneManager.LoadScene(sceneNextClick);
     }
 
-
-    private void StartBackgroundMusik()
+    protected override void StartBackgroundMusik()
     {
-        audioFiles = FindObjectOfType<AudioFiles>();
-        audioSource = FindObjectOfType<AudioSource>();
+        if (!AudioFilesAndSourceNotNull)
+        {
+            LogAudioError();
+            return;
+        }
 
         audioSource.clip = audioFiles.homelessOverviewBackgroundSound;
         audioSource.loop = true;
         audioSource.Play();
     }
+
+
+
 }
