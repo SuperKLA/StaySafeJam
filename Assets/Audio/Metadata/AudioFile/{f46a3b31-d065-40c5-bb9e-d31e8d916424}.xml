@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{f46a3b31-d065-40c5-bb9e-d31e8d916424}">
+		<property name="assetPath">
+			<value>sfx_chop_generic_b.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.27886621315192744</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{05589786-7a50-4b8f-bff7-b70e6f34cc2f}</destination>
+		</relationship>
+	</object>
+</objects>
