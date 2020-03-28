@@ -33,6 +33,7 @@ public class Cutter : MonoBehaviour
         for (int c = 0; c < cutThis.Length; c++)
         {
             var cutObj = cutThis[c];
+            var cutObjFood = cutObj.GetComponent<Food>();
             var pieces = SlicerExtensions.SliceInstantiate(cutObj, position, normal, this.Banana);
 
             if (pieces == null) continue;
@@ -40,143 +41,49 @@ public class Cutter : MonoBehaviour
             for (int i = 0; i < pieces.Length; i++)
             {
                 var piece = pieces[i];
+                piece.name = cutObjFood.name;
+                piece.transform.position = cutObj.transform.position;
+                
                 var collider = piece.AddComponent<MeshCollider>();
                 collider.convex = true;
-
+                
                 var rigid = piece.AddComponent<Rigidbody>();
+                var drag = piece.AddComponent<DraggableRecevoir>();
+                
+                rigid.angularVelocity = Vector3.zero;
+                rigid.velocity = Vector3.zero;
+
+                var meshfilter = piece.GetComponent<MeshFilter>();
+                var volume = Utils.VolumeOfMesh(meshfilter.mesh);
+                var partFactor = volume / cutObjFood.Volume;
+                
+                var food = piece.AddComponent<Food>();
+                food.OwnCollider = collider;
+                food.OwnRigidBody = rigid;
+                food.OwnMeshfilter = meshfilter;
+                food.name = cutObjFood.name;
+                food.Volume = volume;
+                food.Calories = cutObjFood.Calories * partFactor;
+                food.category = cutObjFood.category;
+                food.Draggable = drag;
+                
                 piece.tag = "Sliceable";
+                
             }
             
             Destroy(cutObj);
         }
     }
 
-    void SliceObjects(Vector3 point, Vector3 normal, params GameObject[] toSlice )
-    {
-        //DrawPlane(point, point, normal);
-        // Put results in positive and negative array so that we separate all meshes if there was a cut made
-        List<Transform> positive = new List<Transform>(),
-                        negative = new List<Transform>();
-
-        GameObject obj;
-        bool       slicedAny = false;
-        for (int i = 0; i < toSlice.Length; ++i)
-        {
-            obj = toSlice[i];
-            // We multiply by the inverse transpose of the worldToLocal Matrix, a.k.a the transpose of the localToWorld Matrix
-            // Since this is how normal are transformed
-            var transformedNormal = ((Vector3) (obj.transform.localToWorldMatrix.transpose * normal)).normalized;
-
-            //Convert plane in object's local frame
-            slicePlane.SetNormalAndPosition(
-                                            transformedNormal,
-                                            obj.transform.InverseTransformPoint(point));
-
-            slicedAny = SliceObject(ref slicePlane, obj, positive, negative) || slicedAny;
-        }
-
-        // Separate meshes if a slice was made
-        if (slicedAny)
-            SeparateMeshes(positive, negative, normal);
-    }
+   
     
-    void DrawPlane(Vector3 start, Vector3 end, Vector3 normalVec)
-    {
-        Quaternion rotate = Quaternion.FromToRotation(Vector3.up, normalVec);
-
-        plane.transform.localRotation = rotate;
-        plane.transform.position      = (end + start) / 2;
-        plane.SetActive(true);
-    }
-
-    bool SliceObject(ref Plane slicePlane, GameObject obj, List<Transform> positiveObjects, List<Transform> negativeObjects)
-    {
-        var mesh = obj.GetComponent<MeshFilter>().mesh;
-
-        if (!meshCutter.SliceMesh(mesh, ref slicePlane))
-        {
-            // Put object in the respective list
-            if (slicePlane.GetDistanceToPoint(meshCutter.GetFirstVertex()) >= 0)
-                positiveObjects.Add(obj.transform);
-            else
-                negativeObjects.Add(obj.transform);
-
-            return false;
-        }
-
-        // TODO: Update center of mass
-
-        // Silly condition that labels which mesh is bigger to keep the bigger mesh in the original gameobject
-        bool posBigger = meshCutter.PositiveMesh.surfacearea > meshCutter.NegativeMesh.surfacearea;
-        if (posBigger)
-        {
-            biggerMesh  = meshCutter.PositiveMesh;
-            smallerMesh = meshCutter.NegativeMesh;
-        }
-        else
-        {
-            biggerMesh  = meshCutter.NegativeMesh;
-            smallerMesh = meshCutter.PositiveMesh;
-        }
-
-        // Create new Sliced object with the other mesh
-        GameObject newObject = Instantiate(obj, ObjectContainer);
-        newObject.transform.SetPositionAndRotation(obj.transform.position, obj.transform.rotation);
-        var newObjMesh = newObject.GetComponent<MeshFilter>().mesh;
-
-        // Put the bigger mesh in the original object
-        // TODO: Enable collider generation (either the exact mesh or compute smallest enclosing sphere)
-        ReplaceMesh(mesh, biggerMesh);
-        ReplaceMesh(newObjMesh, smallerMesh);
-
-        (posBigger ? positiveObjects : negativeObjects).Add(obj.transform);
-        (posBigger ? negativeObjects : positiveObjects).Add(newObject.transform);
-
-        return true;
-    }
-
-
-    /// <summary>
-    /// Replace the mesh with tempMesh.
-    /// </summary>
-    void ReplaceMesh(Mesh mesh, TempMesh tempMesh, MeshCollider collider = null)
-    {
-        mesh.Clear();
-        mesh.SetVertices(tempMesh.vertices);
-        mesh.SetTriangles(tempMesh.triangles, 0);
-        mesh.SetNormals(tempMesh.normals);
-        mesh.SetUVs(0, tempMesh.uvs);
-
-        //mesh.RecalculateNormals();
-        mesh.RecalculateTangents();
-
-        if (collider != null && collider.enabled)
-        {
-            collider.sharedMesh = mesh;
-            collider.convex     = true;
-        }
-    }
-
-    void SeparateMeshes(Transform posTransform, Transform negTransform, Vector3 localPlaneNormal)
-    {
-        // Bring back normal in world space
-        Vector3 worldNormal = ((Vector3) (posTransform.worldToLocalMatrix.transpose * localPlaneNormal)).normalized;
-
-        Vector3 separationVec = worldNormal * separation;
-        // Transform direction in world coordinates
-        posTransform.position += separationVec;
-        negTransform.position -= separationVec;
-    }
-
-    void SeparateMeshes(List<Transform> positives, List<Transform> negatives, Vector3 worldPlaneNormal)
-    {
-        int i;
-        var separationVector = worldPlaneNormal * separation;
-
-        for (i = 0; i < positives.Count; ++i)
-            positives[i].transform.position += separationVector;
-
-        for (i = 0; i < negatives.Count; ++i)
-            negatives[i].transform.position -= separationVector;
-    }
+    // void DrawPlane(Vector3 start, Vector3 end, Vector3 normalVec)
+    // {
+    //     Quaternion rotate = Quaternion.FromToRotation(Vector3.up, normalVec);
+    //
+    //     plane.transform.localRotation = rotate;
+    //     plane.transform.position      = (end + start) / 2;
+    //     plane.SetActive(true);
+    // }
+    //
 }

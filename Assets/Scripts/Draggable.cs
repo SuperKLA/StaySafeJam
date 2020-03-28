@@ -1,18 +1,24 @@
 ﻿using System;
 using UnityEngine;
 
-public class Dragable : MonoBehaviour
+public class Draggable : MonoBehaviour
 {
-    private bool       _mouseState;
-    private GameObject target;
-    public  Vector3    screenSpace;
-    public  Vector3    offset;
-    public LayerMask TargetLayer;
+    public static Draggable   Current;
+    private       bool       _mouseState;
+    private       GameObject target;
+    public        Vector3    screenSpace;
+    public        Vector3    offset;
+    public        LayerMask  TargetLayer;
 
     public event Action OnDragEnabled;
     public event Action OnDragEnd;
 
-    public Vector3 CurrentDragPosition => transform.position;
+    public Vector3 CurrentDragPosition => this.target.transform.position;
+
+    private void Start()
+    {
+        Current = this;
+    }
 
     public void Update()
     {
@@ -21,24 +27,29 @@ public class Dragable : MonoBehaviour
         {
             RaycastHit hitInfo;
             target = GetClickedObject(out hitInfo);
-            if (target != null)
+            if (target != null && this.target.GetComponent<DraggableRecevoir>() != null)
             {
+                var recevoir = this.target.GetComponent<DraggableRecevoir>();
+                
                 _mouseState = true;
+
                 screenSpace = Camera.main.WorldToScreenPoint(target.transform.position);
                 offset = target.transform.position -
                          Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenSpace.z));
-
-                if (OnDragEnabled != null)
-                    OnDragEnabled();
+                this.offset += recevoir.Offset;
+                
+                recevoir.OnDragStarting();
             }
         }
 
         if (Input.GetMouseButtonUp(0))
         {
             _mouseState = false;
-            
-            if (OnDragEnd != null)
-                OnDragEnd();
+            if (this.target == null) return;
+
+            var recevoir = this.target.GetComponent<DraggableRecevoir>();
+            if (recevoir != null)
+                recevoir.OnDragEnding();
         }
 
         if (_mouseState)
@@ -58,10 +69,10 @@ public class Dragable : MonoBehaviour
     {
         GameObject target = null;
         Ray        ray    = Camera.main.ScreenPointToRay(Input.mousePosition);
-        
-        Debug.DrawRay(ray.origin, ray.direction *1000, Color.red, 1000, false);
-        
-        if (Physics.Raycast(ray.origin, ray.direction, out hit,1000, TargetLayer))
+
+        Debug.DrawRay(ray.origin, ray.direction * 1000, Color.red, 1000, false);
+
+        if (Physics.Raycast(ray.origin, ray.direction, out hit, 1000))
         {
             target = hit.collider.gameObject;
         }
