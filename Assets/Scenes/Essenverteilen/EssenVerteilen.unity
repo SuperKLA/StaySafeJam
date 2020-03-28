@@ -1030,6 +1030,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   foodList:
   - {fileID: 6170531976012582701, guid: 800a5c79d249c65469a5dddda3c91a67, type: 3}
+  - {fileID: 9100769558132390794, guid: b88c08b7f9654bd4f85602d9f05920e5, type: 3}
 --- !u!1 &1626725992
 GameObject:
   m_ObjectHideFlags: 0
