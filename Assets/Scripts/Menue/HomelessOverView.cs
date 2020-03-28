@@ -1,26 +1,20 @@
 ﻿using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class EndScreen : MenueWithAudio
+public class HomelessOverView : MenueWithAudio
 {
-    public string sceneBackClick;
 
-    // Start is called before the first frame update
+    public string sceneNextClick;
+
     new void Start()
     {
         base.Start();
         StartBackgroundMusik();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void LoadScene()
     {
-        SceneManager.LoadScene(sceneBackClick);
+        SceneManager.LoadScene(sceneNextClick);
     }
 
     protected override void StartBackgroundMusik()
@@ -31,9 +25,11 @@ public class EndScreen : MenueWithAudio
             return;
         }
 
-        audioSource.clip = audioFiles.endScreenBackgroundSound;
+        audioSource.clip = audioFiles.homelessOverviewBackgroundSound;
         audioSource.loop = true;
         audioSource.Play();
     }
+
+
 
 }

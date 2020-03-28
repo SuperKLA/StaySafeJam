@@ -13,29 +13,25 @@ public class HomelessOverviewManager : MonoBehaviour
 
     private void Awake()
     {
-        // List<Homeless> AllHomeLess = FindObjectOfType<HomelessManager>().AllHomeLess;
+        List<Homeless> AllHomeLess = FindObjectOfType<HomelessManager>().AllHomeLess;
 
-        //foreach (var homeless in AllHomeLess)
-        //{
-            
-        //}
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+        foreach (var homeless in AllHomeLess)
+        {
+            HomelessPanel panel = GetPanelByName(homeless.name);
+            if (panel != null)
+                panel.hunger = homeless.currentHunger;
+        }
     }
 
     private HomelessPanel GetPanelByName(string name)
     {
-        if (name == "")
+        if (name == "Hausmann")
             return homeless1;
-        else if (name == "")
+        else if (name == "Doggo")
             return homeless2;
-        else if (name == "")
+        else if (name == "MuetzenFrau")
             return homeless3;
-        else if (name == "")
+        else if (name == "Babuschka")
             return homeless4;
         else return null;
     }

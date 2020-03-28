@@ -4,8 +4,8 @@ using UnityEngine;
 public class Homeless : MonoBehaviour
 {
     public string ID;
-    public string  Name;
-    public float   WellFedValue;
+    public string Name;
+    public float currentHunger;
     public Vector2 HungerIncrease;
 
     public void OnValidate()
