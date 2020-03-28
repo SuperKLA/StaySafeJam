@@ -77,6 +77,14 @@
      <Compile Include="Assets\MeshCutting-Lib\MouseSlice.cs" />
      <Compile Include="Assets\MeshCutting-Lib\ObjectManager.cs" />
      <Compile Include="Assets\MeshCutting-Lib\ScreenLineRenderer.cs" />
+     <Compile Include="Assets\Scripts\AsyncAwaitUtil\AwaitExtensions.cs" />
+     <Compile Include="Assets\Scripts\AsyncAwaitUtil\Awaiters.cs" />
+     <Compile Include="Assets\Scripts\AsyncAwaitUtil\IEnumeratorAwaitExtensions.cs" />
+     <Compile Include="Assets\Scripts\AsyncAwaitUtil\Internal\AsyncCoroutineRunner.cs" />
+     <Compile Include="Assets\Scripts\AsyncAwaitUtil\Internal\SyncContextUtil.cs" />
+     <Compile Include="Assets\Scripts\AsyncAwaitUtil\TaskExtensions.cs" />
+     <Compile Include="Assets\Scripts\AsyncAwaitUtil\WaitForBackgroundThread.cs" />
+     <Compile Include="Assets\Scripts\AsyncAwaitUtil\WaitForUpdate.cs" />
      <Compile Include="Assets\Scripts\Cup.cs" />
      <Compile Include="Assets\Scripts\CupComeCloserManager.cs" />
      <Compile Include="Assets\Scripts\Cutter.cs" />
