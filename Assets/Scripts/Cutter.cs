@@ -53,7 +53,7 @@ public class Cutter : MonoBehaviour
 
     void SliceObjects(Vector3 point, Vector3 normal, params GameObject[] toSlice )
     {
-        DrawPlane(point, point, normal);
+        //DrawPlane(point, point, normal);
         // Put results in positive and negative array so that we separate all meshes if there was a cut made
         List<Transform> positive = new List<Transform>(),
                         negative = new List<Transform>();

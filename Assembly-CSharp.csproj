@@ -79,10 +79,14 @@
      <Compile Include="Assets\MeshCutting-Lib\ScreenLineRenderer.cs" />
      <Compile Include="Assets\Scripts\Cutter.cs" />
      <Compile Include="Assets\Scripts\CuttingBoard.cs" />
-     <Compile Include="Assets\Scripts\DTO\DTOConfig.cs" />
-     <Compile Include="Assets\Scripts\DTO\GameConfigDTO.cs" />
      <Compile Include="Assets\Scripts\Demo.cs" />
      <Compile Include="Assets\Scripts\Dragable.cs" />
+     <Compile Include="Assets\Scripts\Food\Food.cs" />
+     <Compile Include="Assets\Scripts\Food\FoodCategory.cs" />
+     <Compile Include="Assets\Scripts\Food\FoodConfig.cs" />
+     <Compile Include="Assets\Scripts\Food\FoodSelector.cs" />
+     <Compile Include="Assets\Scripts\Homeless\Homeless.cs" />
+     <Compile Include="Assets\Scripts\Homeless\HomelessConfig.cs" />
      <Compile Include="Assets\Scripts\Knife.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/GameProjects/StaySafeJam/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
