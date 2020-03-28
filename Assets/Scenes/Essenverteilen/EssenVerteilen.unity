@@ -339,7 +339,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c44d48cda894b4f9c667dfcd3095d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foodList: []
+  foodList:
+  - {fileID: 0}
 --- !u!1 &1235437679
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,7 +399,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1561363735}
   m_Layer: 0
-  m_Name: GameConfiug
+  m_Name: GameConfig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -723,6 +724,7 @@ GameObject:
   - component: {fileID: 2646964167050426375}
   - component: {fileID: 4361509662599171293}
   - component: {fileID: 4361509662599171292}
+  - component: {fileID: 4361509662599171294}
   m_Layer: 0
   m_Name: banana
   m_TagString: Sliceable
@@ -760,6 +762,21 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -8457624670379154836, guid: 4adfc67fd0d2dc04cb567443ebf4e489, type: 3}
+--- !u!114 &4361509662599171294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4361509662599171291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acf68802d79b1ea44a6a3db569fae844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  foodName: Banana
+  category: 0
+  weight: 100
 --- !u!1 &4373156970987705572
 GameObject:
   m_ObjectHideFlags: 0
