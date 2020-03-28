@@ -3,6 +3,6 @@ using UnityEngine;
 
 public class Homeless : MonoBehaviour
 {
-    public string name;
+    public string homelessName;
     public float hunger;
 }

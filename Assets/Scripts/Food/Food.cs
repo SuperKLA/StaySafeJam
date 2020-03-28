@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Food : MonoBehaviour
 {
-    public string name;
+    public string foodName;
     public FoodCategory category;
     public float weight;
-    public GameObject foodPrefab;
 }
