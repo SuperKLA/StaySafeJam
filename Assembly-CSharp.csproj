@@ -10,7 +10,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{610C92A8-17AA-6CB4-FD45-F50362947845}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -71,10 +72,9 @@
     <Compile Include="Assets\MeshCutting-Lib\MouseSlice.cs" />
     <Compile Include="Assets\MeshCutting-Lib\ObjectManager.cs" />
     <Compile Include="Assets\MeshCutting-Lib\ScreenLineRenderer.cs" />
-    <Compile Include="Assets\Scripts\DTO\DTOConfig.cs" />
-    <Compile Include="Assets\Scripts\DTO\GameConfigDTO.cs" />
     <Compile Include="Assets\Scripts\Demo.cs" />
     <Compile Include="Assets\Scripts\Food\Food.cs" />
+    <Compile Include="Assets\Scripts\Food\FoodCategory.cs" />
     <Compile Include="Assets\Scripts\Food\FoodConfig.cs" />
     <Compile Include="Assets\Scripts\Homeless\Homeless.cs" />
     <Compile Include="Assets\Scripts\Homeless\HomelessConfig.cs" />
