@@ -58,6 +58,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\EzySlice\Framework\IntersectionResult.cs" />
+     <Compile Include="Assets\EzySlice\Framework\Intersector.cs" />
+     <Compile Include="Assets\EzySlice\Framework\Line.cs" />
+     <Compile Include="Assets\EzySlice\Framework\Plane.cs" />
+     <Compile Include="Assets\EzySlice\Framework\TextureRegion.cs" />
+     <Compile Include="Assets\EzySlice\Framework\Triangle.cs" />
+     <Compile Include="Assets\EzySlice\Framework\Triangulator.cs" />
+     <Compile Include="Assets\EzySlice\SlicedHull.cs" />
+     <Compile Include="Assets\EzySlice\Slicer.cs" />
+     <Compile Include="Assets\EzySlice\SlicerExtensions.cs" />
      <Compile Include="Assets\MeshCutting-Lib\CameraOrbit.cs" />
      <Compile Include="Assets\MeshCutting-Lib\DrawBounds.cs" />
      <Compile Include="Assets\MeshCutting-Lib\MeshCutting\Intersections.cs" />
@@ -67,9 +77,13 @@
      <Compile Include="Assets\MeshCutting-Lib\MouseSlice.cs" />
      <Compile Include="Assets\MeshCutting-Lib\ObjectManager.cs" />
      <Compile Include="Assets\MeshCutting-Lib\ScreenLineRenderer.cs" />
+     <Compile Include="Assets\Scripts\Cutter.cs" />
+     <Compile Include="Assets\Scripts\CuttingBoard.cs" />
      <Compile Include="Assets\Scripts\DTO\DTOConfig.cs" />
      <Compile Include="Assets\Scripts\DTO\GameConfigDTO.cs" />
      <Compile Include="Assets\Scripts\Demo.cs" />
+     <Compile Include="Assets\Scripts\Dragable.cs" />
+     <Compile Include="Assets\Scripts\Knife.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/GameProjects/StaySafeJam/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
