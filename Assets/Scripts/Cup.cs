@@ -6,7 +6,7 @@ using UnityEngine;
 public class Cup : MonoBehaviour
 {
     public List<Food> FoodInCup = new List<Food>();
-    
+    public string HomeLessId;
     
     private void OnCollisionEnter(Collision other)
     {

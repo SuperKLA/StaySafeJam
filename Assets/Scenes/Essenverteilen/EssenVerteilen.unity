@@ -198,7 +198,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 145298641}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 1.265, z: -0}
+  m_LocalPosition: {x: 0, y: 1.345, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -266,8 +266,10 @@ GameObject:
   - component: {fileID: 565912672}
   - component: {fileID: 565912671}
   - component: {fileID: 565912670}
+  - component: {fileID: 565912674}
+  - component: {fileID: 565912675}
   m_Layer: 0
-  m_Name: cupSaucer (2)
+  m_Name: cupSaucer1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -285,6 +287,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc419fb93b27413e850b2cabd38a6908, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FoodInCup: []
+  HomeLessId: Homeless1
 --- !u!23 &565912671
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -340,12 +344,41 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 565912669}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.076, z: 0.66}
+  m_LocalPosition: {x: -0.001, y: 0.076, z: 0.503}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &565912674
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565912669}
+  serializedVersion: 2
+  m_Mass: 1000
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!65 &565912675
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565912669}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.35670957, y: 0.038, z: 0.35670957}
+  m_Center: {x: 0, y: 0.019, z: 0}
 --- !u!1 &742151583
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,8 +391,10 @@ GameObject:
   - component: {fileID: 742151586}
   - component: {fileID: 742151585}
   - component: {fileID: 742151584}
+  - component: {fileID: 742151588}
+  - component: {fileID: 742151589}
   m_Layer: 0
-  m_Name: cupSaucer (1)
+  m_Name: cupSaucer2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -377,6 +412,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc419fb93b27413e850b2cabd38a6908, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FoodInCup: []
+  HomeLessId: Homeless3
 --- !u!23 &742151585
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -432,12 +469,41 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 742151583}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.762, y: 0.076, z: 0}
+  m_LocalPosition: {x: 0.621, y: 0.076, z: -0.0009999871}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &742151588
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742151583}
+  serializedVersion: 2
+  m_Mass: 1000
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!65 &742151589
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742151583}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.35670957, y: 0.038, z: 0.35670957}
+  m_Center: {x: 0, y: 0.019, z: 0}
 --- !u!1 &798545169
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,12 +620,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 865920894}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1561363735}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &865920896
 MonoBehaviour:
@@ -575,86 +641,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   foodList:
   - {fileID: 6170531976012582701, guid: 800a5c79d249c65469a5dddda3c91a67, type: 3}
---- !u!1 &1235437679
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1235437680}
-  - component: {fileID: 1235437681}
-  m_Layer: 0
-  m_Name: HomelessConfig
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1235437680
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1235437679}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1561363735}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1235437681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1235437679}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08f4a6bc3e4ed5642b7410dafb25b861, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  homelessList:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
---- !u!1 &1561363734
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1561363735}
-  m_Layer: 0
-  m_Name: GameConfig
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1561363735
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1561363734}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 865920895}
-  - {fileID: 1235437680}
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1833977911
 GameObject:
   m_ObjectHideFlags: 0
@@ -665,10 +651,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1833977915}
   - component: {fileID: 1833977914}
-  - component: {fileID: 1833977913}
   - component: {fileID: 1833977912}
   - component: {fileID: 1833977916}
-  m_Layer: 8
+  - component: {fileID: 1833977913}
+  m_Layer: 0
   m_Name: Knife
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -699,14 +685,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1833977911}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc40c4248a5e45b9bf8e657a9393adff, type: 3}
+  m_Script: {fileID: 11500000, guid: 322b897f47924931a226e8172cbc9780, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screenSpace: {x: 0, y: 0, z: 0}
-  offset: {x: 0, y: 0, z: 0}
-  TargetLayer:
-    serializedVersion: 2
-    m_Bits: 256
+  Offset: {x: 0, y: 0, z: 0}
 --- !u!65 &1833977914
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -718,8 +700,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.22700888, y: 0.033491373, z: 0.78378403}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.06808239, y: 0.033491373, z: 0.78378403}
+  m_Center: {x: -0.0038180724, y: 0, z: 0}
 --- !u!4 &1833977915
 Transform:
   m_ObjectHideFlags: 0
@@ -767,8 +749,10 @@ GameObject:
   - component: {fileID: 1999404062}
   - component: {fileID: 1999404061}
   - component: {fileID: 1999404060}
+  - component: {fileID: 1999404064}
+  - component: {fileID: 1999404065}
   m_Layer: 0
-  m_Name: cupSaucer (3)
+  m_Name: cupSaucer3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -786,6 +770,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc419fb93b27413e850b2cabd38a6908, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FoodInCup: []
+  HomeLessId: Homeless4
 --- !u!23 &1999404061
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -841,12 +827,41 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1999404059}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.076, z: -0.66}
+  m_LocalPosition: {x: -0.001, y: 0.076, z: -0.505}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1999404064
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999404059}
+  serializedVersion: 2
+  m_Mass: 1000
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!65 &1999404065
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999404059}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.35670957, y: 0.038, z: 0.35670957}
+  m_Center: {x: 0, y: 0.019, z: 0}
 --- !u!23 &579889966665718603
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -952,6 +967,8 @@ GameObject:
   - component: {fileID: 6570936236648146866}
   - component: {fileID: 579889966665718603}
   - component: {fileID: 1166705904087625624}
+  - component: {fileID: 1166705904087625625}
+  - component: {fileID: 1166705904087625626}
   m_Layer: 0
   m_Name: cupSaucer
   m_TagString: Untagged
@@ -971,6 +988,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc419fb93b27413e850b2cabd38a6908, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FoodInCup: []
+  HomeLessId: Homeless1
+--- !u!54 &1166705904087625625
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166705904087625623}
+  serializedVersion: 2
+  m_Mass: 1000
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!65 &1166705904087625626
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166705904087625623}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.35670957, y: 0.038, z: 0.35670957}
+  m_Center: {x: 0, y: 0.019, z: 0}
 --- !u!1 &1368114432669215483
 GameObject:
   m_ObjectHideFlags: 0
@@ -1162,7 +1210,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1166705904087625623}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.762, y: 0.076, z: 0}
+  m_LocalPosition: {x: -0.62299997, y: 0.076, z: -0.0009999871}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

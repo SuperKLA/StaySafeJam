@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Homeless : MonoBehaviour
 {
+    public string ID;
     public string  Name;
     public float   WellFedValue;
     public Vector2 HungerIncrease;

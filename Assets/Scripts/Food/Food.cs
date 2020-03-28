@@ -1,18 +1,25 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Food : MonoBehaviour
 {
     public DraggableRecevoir Draggable;
-    public Rigidbody OwnRigidBody;
-    public MeshCollider OwnCollider;
-    
-    public string name;
+    public Rigidbody         OwnRigidBody;
+    public MeshCollider      OwnCollider;
+    public MeshFilter        OwnMeshfilter;
+
+    public string       name;
     public FoodCategory category;
-    public float Calories;
-    public GameObject foodPrefab;
-    
+    public float        Calories;
+    public float        Volume;
+
+    [ContextMenu("CalculateMeshVolume")]
+    private void CalculateMeshVolume()
+    {
+        this.Volume = Utils.VolumeOfMesh(OwnMeshfilter.sharedMesh);
+        Debug.Log("CalculateMeshVolume abgeschlossen");
+    }
+
+
     private void Start()
     {
         this.Draggable.OnDragEnabled += this.OnDragEnabled;
@@ -21,7 +28,7 @@ public class Food : MonoBehaviour
 
     private void OnDragEnd()
     {
-        this.OwnRigidBody.useGravity = true;
+        this.OwnRigidBody.useGravity       = true;
         this.OwnRigidBody.detectCollisions = true;
     }
 
@@ -29,8 +36,8 @@ public class Food : MonoBehaviour
     {
         this.OwnRigidBody.angularVelocity = Vector3.zero;
         this.OwnRigidBody.velocity        = Vector3.zero;
-        
-        this.OwnRigidBody.useGravity = false;
+
+        this.OwnRigidBody.useGravity       = false;
         this.OwnRigidBody.detectCollisions = false;
     }
 }

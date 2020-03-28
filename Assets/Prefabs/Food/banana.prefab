@@ -127,11 +127,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Draggable: {fileID: 937717843087997088}
-  OwnRigidBody: {fileID: 0}
-  OwnCollider: {fileID: 0}
+  OwnRigidBody: {fileID: 6170531976012582703}
+  OwnCollider: {fileID: 6170531976012582702}
+  OwnMeshfilter: {fileID: 2207464499721701133}
   name: Banana
   category: 0
-  Calories: 0
+  Calories: 500
+  Volume: 0.43878356
   foodPrefab: {fileID: 0}
 --- !u!114 &937717843087997088
 MonoBehaviour:
