@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6170531976012582702}
   - component: {fileID: 6170531976012582703}
   - component: {fileID: 6170531976012582701}
+  - component: {fileID: 937717843087997088}
   m_Layer: 0
   m_Name: banana
   m_TagString: Sliceable
@@ -125,6 +126,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acf68802d79b1ea44a6a3db569fae844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foodName: Banana
+  Draggable: {fileID: 937717843087997088}
+  OwnRigidBody: {fileID: 0}
+  OwnCollider: {fileID: 0}
+  name: Banana
   category: 0
-  weight: 100
+  Calories: 0
+  foodPrefab: {fileID: 0}
+--- !u!114 &937717843087997088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6170531976012582696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 322b897f47924931a226e8172cbc9780, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Offset: {x: 0, y: 0.2, z: 0}

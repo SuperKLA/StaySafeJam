@@ -6,7 +6,7 @@ using UnityEngine;
 public class Knife : MonoBehaviour
 {
     public Animator OwnAnimator;
-    public Dragable KnifeDragable;
+    public DraggableRecevoir KnifeDragable;
     public static Knife Current;
     
     public bool IsHoldingKnife;
@@ -60,7 +60,7 @@ public class Knife : MonoBehaviour
     public void OnKnifeIsCutting()
     {
         //Sound spielen
-        var position = this.KnifeDragable.CurrentDragPosition;
+        var position = Draggable.Current.CurrentDragPosition;
         var normal   = this.transform.right;
 
         var toSlice = GameObject.FindGameObjectsWithTag("Sliceable");
