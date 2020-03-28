@@ -5,14 +5,14 @@ public class StartMenue : MonoBehaviour
 {
     public string scenePlayClick;
 
-    private AudioFiles audioFiles;
+    private AudioFiles  audioFiles;
     private AudioSource audioSource;
-    private Animator animator;
+    private Animator    animator;
 
     void Start()
     {
-        StartBackgroundMusik();
-        animator = GetComponent<Animator>();
+        this.StartBackgroundMusik();
+        this.animator = GetComponent<Animator>();
     }
 
     public void PlayBtnCLick()
@@ -37,7 +37,7 @@ public class StartMenue : MonoBehaviour
 
     private void StartBackgroundMusik()
     {
-        audioFiles = FindObjectOfType<AudioFiles>();
+        audioFiles  = FindObjectOfType<AudioFiles>();
         audioSource = FindObjectOfType<AudioSource>();
 
         audioSource.clip = audioFiles.startMenueBackgroundSound;
