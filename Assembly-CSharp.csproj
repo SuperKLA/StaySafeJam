@@ -88,6 +88,7 @@
      <Compile Include="Assets\Scripts\Homeless\Homeless.cs" />
      <Compile Include="Assets\Scripts\Homeless\HomelessConfig.cs" />
      <Compile Include="Assets\Scripts\Knife.cs" />
+     <None Include="Assets\Shader\ProjectorShader.shader" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/GameProjects/StaySafeJam/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
