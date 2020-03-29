@@ -29,7 +29,4 @@ public class HomelessOverView : MenueWithAudio
         audioSource.loop = true;
         audioSource.Play();
     }
-
-
-
 }
