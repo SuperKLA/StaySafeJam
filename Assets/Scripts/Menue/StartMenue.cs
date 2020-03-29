@@ -41,7 +41,10 @@ public class StartMenue : MenueWithAudio
         {
             var objs = Resources.FindObjectsOfTypeAll(typeof(MainMenuMusic));
 
-            if (objs.Length == 0 && objs[0] is MainMenuMusic) return;
+            if (objs.Length == 0) return;
+
+            var correctType = objs[0] is MainMenuMusic;
+            if (!correctType) return;
 
             var music = (MainMenuMusic) objs[0];
             this.MainMusic = music.gameObject;
