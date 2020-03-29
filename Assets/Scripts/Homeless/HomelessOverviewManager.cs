@@ -5,10 +5,10 @@ using UnityEngine;
 public class HomelessOverviewManager : MonoBehaviour
 {
 
-    public HomelessPanel homeless1;
-    public HomelessPanel homeless2;
-    public HomelessPanel homeless3;
-    public HomelessPanel homeless4;
+    public HomelessPanel Liam;
+    public HomelessPanel Gunner;
+    public HomelessPanel Sarah;
+    public HomelessPanel Gerthrud;
 
 
     private void Awake()
@@ -17,7 +17,7 @@ public class HomelessOverviewManager : MonoBehaviour
 
         foreach (var homeless in AllHomeLess)
         {
-            HomelessPanel panel = GetPanelByName(homeless.name);
+            HomelessPanel panel = GetPanelByName(homeless.ID);
             if (panel != null)
                 panel.hunger = homeless.currentHunger;
         }
@@ -25,14 +25,14 @@ public class HomelessOverviewManager : MonoBehaviour
 
     private HomelessPanel GetPanelByName(string name)
     {
-        if (name == "Mausmann")
-            return homeless1;
-        else if (name == "Doggo")
-            return homeless2;
-        else if (name == "MuetzenFrau")
-            return homeless3;
-        else if (name == "Babuschka")
-            return homeless4;
+        if (name == "Homeless1")
+            return Sarah;
+        else if (name == "Homeless2")
+            return Liam;
+        else if (name == "Homeless3")
+            return Gunner;
+        else if (name == "Homeless4")
+            return Gerthrud;
         else return null;
     }
 

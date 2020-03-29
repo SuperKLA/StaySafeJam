@@ -21,22 +21,39 @@ public class HomelessDisplay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        homelessPortrait.sprite = HomelessPanel.portrait;
         homelessName.text = HomelessPanel.homelessName;
-        float hunger = HomelessPanel.hunger;
-        homelessHunger.value = hunger;
-        ChangeHungerBarColor(hunger);
+        SetHunger(HomelessPanel.hunger);
     }
 
-    private void ChangeHungerBarColor(float hunger)
+    private void SetHunger(float value)
     {
-        if (hunger >= 75)
+        homelessHunger.value = value;
+        ChangeHungerBarColor();
+        ChangePortrait();
+    }
+
+    private void ChangeHungerBarColor()
+    {
+        if (homelessHunger.value >= 75)
             homlessHungerBar.color = green;
-        else if (hunger >= 50)
+        else if (homelessHunger.value >= 50)
             homlessHungerBar.color = yellow;
-        else if (hunger >= 25)
+        else if (homelessHunger.value >= 25)
             homlessHungerBar.color = orange;
         else
             homlessHungerBar.color = red;
     }
+    
+    private void ChangePortrait()
+    {
+        if (homelessHunger.value >= 90)
+            homelessPortrait.sprite = HomelessPanel.portrait[3];
+        else if (homelessHunger.value >= 50)
+            homelessPortrait.sprite = HomelessPanel.portrait[2];
+        else if (homelessHunger.value >= 25)
+            homelessPortrait.sprite = HomelessPanel.portrait[1];
+        else
+            homelessPortrait.sprite = HomelessPanel.portrait[0];
+    }
+
 }
