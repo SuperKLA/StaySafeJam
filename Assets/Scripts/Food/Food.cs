@@ -41,6 +41,7 @@ public class Food : MonoBehaviour
     private void OnDragEnabled()
     {
         CupComeCloserManager.Current.SetCupComeCloser(this.gameObject);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/sfx_food_pickup", this.transform.position);
 
         this.OwnRigidBody.angularVelocity = Vector3.zero;
         this.OwnRigidBody.velocity        = Vector3.zero;
