@@ -567,7 +567,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/SFX/sfx_chop_chocolate
+  Event: event:/SFX/chop_specifics/sfx_chop_chocolate
   PlayEvent: 1
   StopEvent: 0
   AllowFadeout: 1

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4269389497527872778}
   - component: {fileID: 4269389497527872779}
   - component: {fileID: 4269389497527872780}
+  - component: {fileID: 8163335021169526009}
   m_Layer: 0
   m_Name: tomate
   m_TagString: Sliceable
@@ -145,6 +146,30 @@ MonoBehaviour:
   InnerTexture: {fileID: 2800000, guid: ade13c1ac70e8834ab304d8957af0204, type: 3}
   OwnMaterial: {fileID: 2100000, guid: c224dba201e56ba42a7b7ea9b7345916, type: 2}
   name: Tomato
+  CutSound: event:/SFX/chop_specifics/sfx_chop_lemon
   category: 0
   Calories: 200
   Volume: 0.0059245247
+--- !u!114 &8163335021169526009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4269389497527872781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/chop_specifics/sfx_chop_lemon
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
