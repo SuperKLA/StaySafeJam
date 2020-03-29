@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+[RequireComponent(typeof(DraggableRecevoir))]
 public class Food : MonoBehaviour
 {
     public DraggableRecevoir Draggable;
