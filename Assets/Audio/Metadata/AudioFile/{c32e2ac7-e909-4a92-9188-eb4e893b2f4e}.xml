@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{c32e2ac7-e909-4a92-9188-eb4e893b2f4e}">
+		<property name="assetPath">
+			<value>dog_breathe.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>4.043310657596372</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{05589786-7a50-4b8f-bff7-b70e6f34cc2f}</destination>
+		</relationship>
+	</object>
+</objects>

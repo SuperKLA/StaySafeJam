@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{57eea0d7-bad7-4327-8f26-e78a754b0305}">
+		<property name="name">
+			<value>Gunner</value>
+		</property>
+		<relationship name="folder">
+			<destination>{fb90708d-728a-4043-8a15-869603bd6cb3}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{5c5f5af5-fae5-43d8-9b33-b2536aac7dd0}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{5c5f5af5-fae5-43d8-9b33-b2536aac7dd0}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>4</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>starving</value>
+			<value>normal</value>
+			<value>happy</value>
+			<value>obese</value>
+		</property>
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+	</object>
+</objects>
