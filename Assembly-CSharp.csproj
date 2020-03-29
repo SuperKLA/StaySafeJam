@@ -122,6 +122,7 @@
      <Compile Include="Assets\Scripts\SpeechBubble\SpeechBubbleService.cs" />
      <Compile Include="Assets\Scripts\SpeechBubble\TestScript.cs" />
      <Compile Include="Assets\Scripts\Utils.cs" />
+     <Compile Include="Assets\Scripts\uGUITools.cs" />
      <None Include="Assets\Audio\Metadata\Group\{3f60f39c-0347-4778-a992-9fddb414507f}.xml" />
      <None Include="Assets\Audio\Metadata\AudioFile\{15daa500-1097-4a2b-b750-71c0b2722db7}.xml" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
