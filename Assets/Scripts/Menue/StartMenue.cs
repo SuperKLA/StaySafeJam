@@ -19,9 +19,14 @@ public class StartMenue : MenueWithAudio
             this.MainMusic = MainMenuMusic.Current.gameObject;
         }
         
+        // if (MainMenuMusic.Current != null)
+        // {
+        //     MainMenuMusic.Current.StopWinLoseSound();
+        // }
+        
         MainMusic.gameObject.SetActive(false);
         
-        var master = FMODUnity.RuntimeManager.GetBus("bus:/Master");
+        var master = FMODUnity.RuntimeManager.GetBus("bus:/Master/Music");
         master.setVolume(0.2f);
     }
 
@@ -43,6 +48,11 @@ public class StartMenue : MenueWithAudio
 
     public void LoadScene()
     {
+        if (MainMenuMusic.Current != null)
+        {
+            MainMenuMusic.Current.Play();
+        }
+        
         SceneManager.LoadScene(scenePlayClick);
     }
 }

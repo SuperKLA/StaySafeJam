@@ -21,6 +21,7 @@ public class EndScreen : MenueWithAudio
 
     public void LoadScene()
     {
+        //MainMenuMusic.Current.PlayLoseSound();
         SceneManager.LoadScene(sceneBackClick);
     }
 
