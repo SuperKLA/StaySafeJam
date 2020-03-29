@@ -6,7 +6,6 @@ using UnityEngine;
 public class Knife : MonoBehaviour
 {
     public        Rigidbody         OwnRigidbody;
-    public        Animator          OwnAnimator;
     public        DraggableRecevoir KnifeDragable;
     public static Knife             Current;
 
@@ -22,7 +21,6 @@ public class Knife : MonoBehaviour
 
         this.KnifeDragable.OnDragEnabled += this.KnifeDragableOnDragEnabled;
         this.KnifeDragable.OnDragEnd     += this.KnifeDragableOnDragEnd;
-        this.OwnAnimator.enabled         =  false;
     }
 
     private void KnifeDragableOnDragEnd()
@@ -126,11 +124,6 @@ public class Knife : MonoBehaviour
         {
             this.RotateKnife(1);
         }
-    }
-
-    public void OnKnifeCutEnd()
-    {
-        this.OwnAnimator.enabled = false;
     }
 
     public void OnKnifeIsCutting()
