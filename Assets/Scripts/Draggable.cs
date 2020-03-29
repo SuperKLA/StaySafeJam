@@ -88,14 +88,28 @@ public class Draggable : MonoBehaviour
     {
         GameObject target = null;
         Ray        ray    = Camera.main.ScreenPointToRay(Input.mousePosition);
+        hit = new RaycastHit();
 
         Debug.DrawRay(ray.origin, ray.direction * 1000, Color.red, 1000, false);
-        
-        if (Physics.Raycast(ray.origin, ray.direction, out hit, 1000))
-        {
-            target = hit.collider.gameObject;
-        }
 
-        return target;
+        var result = Physics.RaycastAll(ray.origin, ray.direction, 1000);
+        for (int c = 0; c < result.Length; c++)
+        {
+            var hitData = result[c];
+            var hitGo = hitData.collider.gameObject;
+            var recevoir = hitGo.GetComponent<DraggableRecevoir>();
+            if (recevoir != null)
+            {
+                hit = hitData;
+                target = hitGo;
+                return hitGo;
+            }
+        }
+        // if (Physics.RaycastAll(ray.origin, ray.direction, out hit, 1000))
+        // {
+        //     target = hit.collider.gameObject;
+        // }
+
+        return null;
     }
 }
