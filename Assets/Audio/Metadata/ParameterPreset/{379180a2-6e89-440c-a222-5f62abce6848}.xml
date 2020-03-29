@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="ParameterPreset" id="{379180a2-6e89-440c-a222-5f62abce6848}">
 		<property name="name">
-			<value>es läuft schlecht</value>
+			<value>gameplay_bad</value>
 		</property>
 		<relationship name="folder">
 			<destination>{fb90708d-728a-4043-8a15-869603bd6cb3}</destination>
