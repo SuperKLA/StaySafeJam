@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Essenverteilen/EssenVerteilen.unity
     guid: e08011cf6405471498f5744ba786e709
+  - enabled: 1
+    path: Assets/Scenes/HungerScene.unity
+    guid: 4ff1b3faf2a157640b1e919118b709c3
+  - enabled: 1
+    path: Assets/Scenes/EndScene.unity
+    guid: c0cd87cdab19d6f4498be6f9de54c3d2
   m_configObjects: {}
