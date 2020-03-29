@@ -13,7 +13,7 @@ public class HomelessOverviewManager : MonoBehaviour
 
     private void Awake()
     {
-        List<Homeless> AllHomeLess = FindObjectOfType<HomelessManager>().AllHomeLess;
+        List<Homeless> AllHomeLess = FindObjectOfType<HomelessManager>()?.AllHomeLess;
 
         foreach (var homeless in AllHomeLess)
         {
