@@ -45,7 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: Homeless2
   Name: Liam
-  currentHunger: 73
+  currentHunger: 80
   HungerIncrease: {x: 10, y: 20}
 --- !u!1 &1822594107212404188
 GameObject:
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: Homeless3
   Name: Gunner
-  currentHunger: 63
+  currentHunger: 80
   HungerIncrease: {x: 10, y: 20}
 --- !u!1 &1822594107317828781
 GameObject:
@@ -146,7 +146,7 @@ MonoBehaviour:
   - {fileID: 1822594107167709141}
   - {fileID: 1822594107212404186}
   - {fileID: 1822594107635006764}
-  CaloriesNeedForMax: 4000
+  CaloriesNeedForMax: 1000
   RoundsToWin: 10
   CurrentRound: 0
 --- !u!1 &1822594107321410403
@@ -194,7 +194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: Homeless1
   Name: Sarah
-  currentHunger: 55
+  currentHunger: 80
   HungerIncrease: {x: 10, y: 20}
 --- !u!1 &1822594107635006766
 GameObject:
@@ -241,5 +241,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: Homeless4
   Name: Gerthrud
-  currentHunger: 62
+  currentHunger: 80
   HungerIncrease: {x: 10, y: 20}
