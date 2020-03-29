@@ -37,7 +37,22 @@ public class StartMenue : MenueWithAudio
             this.MainMusic = MainMenuMusic.Current.gameObject;
         }
         
-        MainMusic.gameObject.SetActive(true);
+        if (this.MainMusic == null)
+        {
+            var objs = Resources.FindObjectsOfTypeAll(typeof(MainMenuMusic));
+
+            if (objs.Length == 0 && objs[0] is MainMenuMusic) return;
+
+            var music = (MainMenuMusic) objs[0];
+            this.MainMusic = music.gameObject;
+            MainMusic.gameObject.SetActive(true);
+        }
+
+        if (this.MainMusic != null)
+        {
+            MainMusic.gameObject.SetActive(true);
+        }
+
         animator.SetTrigger("LoadScene");
     }
 
