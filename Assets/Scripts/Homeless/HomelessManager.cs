@@ -82,6 +82,8 @@ public class HomelessManager : MonoBehaviour
 
     public void ResetHomeless()
     {
+        this.homelessConfig.CurrentRound = 0;
+        
         for (int c = 0; c < this.AllHomeLess.Count && c < this.HungerStartValues.Count; c++)
         {
             var homeless = this.AllHomeLess[c];

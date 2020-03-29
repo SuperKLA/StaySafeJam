@@ -47,22 +47,21 @@ public class MainMenuMusic : MonoBehaviour
     {
         if (!InitDone) return;
         
-        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("gameover", 1);
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("gameover", 1f);
     }
     
     public void PlayWinSound()
     {
         if (!InitDone) return;
         
-        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("victory", 1);
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("gameover", 2f);
     }
 
     public void StopWinLoseSound()
     {
         if (!InitDone) return;
         
-        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("gameover", 0);
-        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("victory", 0);
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("gameover", 0f);
     }
     
     public void SetVolume(float val)

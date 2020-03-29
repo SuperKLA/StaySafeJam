@@ -32,6 +32,9 @@ public class Cup : MonoBehaviour
 
         if (CupComeCloserManager.Current.LastTarget == null || !other.gameObject.Equals(CupComeCloserManager.Current.LastTarget)) return;
         
+        if(!this.FoodInCup.Contains(food))
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/sfx_food_putdown", this.transform.position);
+        
         this.FoodInCup.Add(food);
         food.transform.SetParent(this.transform);
 
