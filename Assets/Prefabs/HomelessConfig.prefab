@@ -45,7 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: Homeless2
   Name: Liam
-  currentHunger: 33
+  currentHunger: 73
   HungerIncrease: {x: 10, y: 20}
 --- !u!1 &1822594107212404188
 GameObject:
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: Homeless3
   Name: Gunner
-  currentHunger: 28
+  currentHunger: 63
   HungerIncrease: {x: 10, y: 20}
 --- !u!1 &1822594107317828781
 GameObject:
@@ -192,7 +192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: Homeless1
   Name: Sarah
-  currentHunger: 25
+  currentHunger: 55
   HungerIncrease: {x: 10, y: 20}
 --- !u!1 &1822594107635006766
 GameObject:
@@ -239,5 +239,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: Homeless4
   Name: Gerthrud
-  currentHunger: 27
+  currentHunger: 62
   HungerIncrease: {x: 10, y: 20}

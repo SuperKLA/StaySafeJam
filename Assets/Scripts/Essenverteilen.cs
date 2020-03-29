@@ -21,7 +21,7 @@ public class Essenverteilen : MonoBehaviour
 
         currentLevel /= allHomeLess.Count;
         
-        if(currentLevel < 50)
+        if(currentLevel < 35)
             MainMenuMusic.Current.SetBadMood(1);
         else
             MainMenuMusic.Current.SetBadMood(0);
