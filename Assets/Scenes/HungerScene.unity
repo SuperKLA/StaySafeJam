@@ -498,6 +498,7 @@ MonoBehaviour:
   homelessPortrait: {fileID: 1787739810}
   homelessName: {fileID: 2037748944}
   homelessHunger: {fileID: 1701209331}
+  homlessHungerBar: {fileID: 288315207}
 --- !u!114 &361218705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1801,6 +1802,7 @@ MonoBehaviour:
   homelessPortrait: {fileID: 1507697736}
   homelessName: {fileID: 117507313}
   homelessHunger: {fileID: 1738706270}
+  homlessHungerBar: {fileID: 448060516}
 --- !u!114 &1332859594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1894,6 +1896,7 @@ MonoBehaviour:
   homelessPortrait: {fileID: 1837782349}
   homelessName: {fileID: 1360514085}
   homelessHunger: {fileID: 1996689349}
+  homlessHungerBar: {fileID: 2080609149}
 --- !u!114 &1335455699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2244,6 +2247,7 @@ MonoBehaviour:
   homelessPortrait: {fileID: 1232777024}
   homelessName: {fileID: 338778286}
   homelessHunger: {fileID: 719050101}
+  homlessHungerBar: {fileID: 908863573}
 --- !u!1 &1519560578
 GameObject:
   m_ObjectHideFlags: 0
