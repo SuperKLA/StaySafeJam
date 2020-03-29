@@ -14,6 +14,9 @@ public class SpeechBubble : MonoBehaviour
 
     public void ShowSpeechBubble(SpeechBubbleData data)
     {
+        if (iAmActive)
+            return;
+
         iAmActive = true;
         TimeToDestroy = Time.time + data.LifeTime;
         myText.text = data.text;
