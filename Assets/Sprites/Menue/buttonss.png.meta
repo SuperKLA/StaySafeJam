@@ -1,19 +1,31 @@
 fileFormatVersion: 2
-guid: 741c16a214e1f18468709fb08116b4c2
+guid: 8568a1097e657c242bec40f93afc5101
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1705177961712144163
-    second: grandma-atlas_0
+      213: 2147319365362327571
+    second: buttonss_0
   - first:
-      213: -5721908410519317106
-    second: grandma-atlas_1
+      213: 4101198540831143649
+    second: buttonss_1
   - first:
-      213: -8823461125961251914
-    second: grandma-atlas_2
+      213: 7014286920340365030
+    second: buttonss_2
   - first:
-      213: -5209194171740785868
-    second: grandma-atlas_3
+      213: -6864619695887947445
+    second: buttonss_3
+  - first:
+      213: -2072730052369455630
+    second: buttonss_4
+  - first:
+      213: 8016161549799033073
+    second: buttonss_5
+  - first:
+      213: 2361897939212077274
+    second: buttonss_6
+  - first:
+      213: 7263272501180668078
+    second: buttonss_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -96,19 +108,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
+    buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -135,85 +135,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grandma-atlas_0
+      name: buttonss_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 512
-        height: 512
+        x: 38
+        y: 461
+        width: 370
+        height: 84
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32f4dae52520aa710800000000000000
-      internalID: 1705177961712144163
+      spriteID: 3102db7f59fcccd10800000000000000
+      internalID: 2147319365362327571
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grandma-atlas_1
+      name: buttonss_1
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
-        width: 512
-        height: 512
+        x: 464
+        y: 463
+        width: 363
+        height: 80
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e851da9dd92b790b0800000000000000
-      internalID: -5721908410519317106
+      spriteID: 1e6379308526ae830800000000000000
+      internalID: 4101198540831143649
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grandma-atlas_2
+      name: buttonss_2
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 512
-        height: 512
+        x: 43
+        y: 325
+        width: 361
+        height: 79
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b38c99cad4cc8580800000000000000
-      internalID: -8823461125961251914
+      spriteID: 6ee5e8f6ac0c75160800000000000000
+      internalID: 7014286920340365030
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grandma-atlas_3
+      name: buttonss_3
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 0
-        width: 512
-        height: 512
+        x: 460
+        y: 323
+        width: 368
+        height: 76
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 433fa53108935b7b0800000000000000
-      internalID: -5209194171740785868
+      spriteID: b49e274c1c8fbb0a0800000000000000
+      internalID: -6864619695887947445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonss_4
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 177
+        width: 367
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5ed39cffe2c33e0800000000000000
+      internalID: -2072730052369455630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonss_5
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 183
+        width: 361
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f88ae545702f3f60800000000000000
+      internalID: 8016161549799033073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonss_6
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 38
+        width: 366
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad8867e69a527c020800000000000000
+      internalID: 2361897939212077274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonss_7
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 35
+        width: 373
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea89cbb7bd35cc460800000000000000
+      internalID: 7263272501180668078
       vertices: []
       indices: 
       edges: []
@@ -221,7 +305,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 46eb040d741cd0b40988f710f4265cd5
+    spriteID: eb70cd1bce4ffc2438368b9a82c7d723
     internalID: 0
     vertices: []
     indices: 

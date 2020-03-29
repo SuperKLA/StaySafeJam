@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0a16f2ca9294146b9f51df52d9b330, type: 3}
+  m_Name: Gunner
+  m_EditorClassIdentifier: 
+  portrait:
+  - {fileID: -9032058741943313857, guid: 5355cef300b20524d80d6ab1b63ea00f, type: 3}
+  - {fileID: -6714831648085436104, guid: 5355cef300b20524d80d6ab1b63ea00f, type: 3}
+  - {fileID: -7958779701355259416, guid: 5355cef300b20524d80d6ab1b63ea00f, type: 3}
+  - {fileID: -6418435557987706475, guid: 5355cef300b20524d80d6ab1b63ea00f, type: 3}
+  homelessName: Gunner
+  hunger: 25

@@ -10,8 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d0a16f2ca9294146b9f51df52d9b330, type: 3}
-  m_Name: MuetzenFrau
+  m_Name: Liam
   m_EditorClassIdentifier: 
-  portrait: {fileID: 21300000, guid: 271eeffeeb401d94095ba15646a4c252, type: 3}
-  homelessName: MuetzenFrau
+  portrait:
+  - {fileID: -7122414393340989629, guid: c67373d0af1400844a3d64c80930ddd1, type: 3}
+  - {fileID: -6054835202604380242, guid: c67373d0af1400844a3d64c80930ddd1, type: 3}
+  - {fileID: -3587543222833864329, guid: c67373d0af1400844a3d64c80930ddd1, type: 3}
+  - {fileID: -4386900868337761438, guid: c67373d0af1400844a3d64c80930ddd1, type: 3}
+  homelessName: Liam
   hunger: 75
