@@ -20,7 +20,7 @@ public class MainMenuMusic : MonoBehaviour
 
         this.InitDone = true;
 
-        this.SetVolume(0.3f);
+        this.SetVolume(0.2f);
     }
 
     public void SetBadMood(float val)
