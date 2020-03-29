@@ -5,6 +5,9 @@ public class Essenverteilen : MonoBehaviour
 {
     public void Start()
     {
+        var homelessConfig = HomelessManager.Current.homelessConfig;
+        homelessConfig.CurrentRound++;
+        
         SetMood();
     }
 

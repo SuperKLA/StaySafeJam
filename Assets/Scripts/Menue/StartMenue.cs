@@ -14,6 +14,9 @@ public class StartMenue : MenueWithAudio
         this.animator = GetComponent<Animator>();
         this.StartBackgroundMusik();
         MainMusic.gameObject.SetActive(false);
+        
+        var master = FMODUnity.RuntimeManager.GetBus("bus:/Master");
+        master.setVolume(0.2f);
     }
 
     public void PlayBtnCLick()

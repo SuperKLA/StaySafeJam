@@ -1,5 +1,22 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9141669815464180807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/atm_inside/Gunner
+  m_EditorClassIdentifier: 
+  Name: Gunner
+  Min: 0
+  Max: 4
+  Default: 1
+  Exists: 1
 --- !u!114 &-9099412554367750276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16,6 +33,23 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
+  Exists: 1
+--- !u!114 &-8984955830939370716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/atm_inside/Gerthrud
+  m_EditorClassIdentifier: 
+  Name: Gerthrud
+  Min: 0
+  Max: 4
+  Default: 1
   Exists: 1
 --- !u!114 &-8863309740517226250
 MonoBehaviour:
@@ -67,7 +101,7 @@ MonoBehaviour:
   guid: 19b0131f3cdd6c428c72657e68f2ac47
   Banks:
   - {fileID: -5726505839845564076}
-  - {fileID: -869869027673902801}
+  - {fileID: 3548886046695791213}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -91,7 +125,7 @@ MonoBehaviour:
   guid: f5b6cdf56585c64ba7e59cc9c2f3c859
   Banks:
   - {fileID: -5726505839845564076}
-  - {fileID: -869869027673902801}
+  - {fileID: 3548886046695791213}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -114,7 +148,7 @@ MonoBehaviour:
   Path: event:/SFX/sfx_knife_pickup
   guid: e92aa34c29edbb40b7a210215c373f2d
   Banks:
-  - {fileID: -869869027673902801}
+  - {fileID: 3548886046695791213}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -177,7 +211,7 @@ MonoBehaviour:
   guid: 4cdb1e33010b9d4db6c541870e6c212c
   Banks:
   - {fileID: -5726505839845564076}
-  - {fileID: -869869027673902801}
+  - {fileID: 3548886046695791213}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -240,7 +274,7 @@ MonoBehaviour:
   Path: event:/SFX/sfx_knife_putdown
   guid: 66fd151edaf68e4ebc719f7c7f7ef16d
   Banks:
-  - {fileID: -869869027673902801}
+  - {fileID: 3548886046695791213}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -264,7 +298,7 @@ MonoBehaviour:
   guid: 0b4cf1c5f891c2439be8a833d0876581
   Banks:
   - {fileID: -5726505839845564076}
-  - {fileID: -869869027673902801}
+  - {fileID: 3548886046695791213}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -305,7 +339,7 @@ MonoBehaviour:
   guid: 8d40f94f05707444b10ce423150ba521
   Banks:
   - {fileID: -5726505839845564076}
-  - {fileID: -869869027673902801}
+  - {fileID: 3548886046695791213}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -363,7 +397,7 @@ MonoBehaviour:
   Path: event:/SFX/sfx_food_putdown
   guid: 38da8b7f5650f148910cf50eb32bdb40
   Banks:
-  - {fileID: -869869027673902801}
+  - {fileID: 3548886046695791213}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -551,7 +585,7 @@ MonoBehaviour:
   Path: event:/SFX/sfx_food_pickup
   guid: a34b9002ec370e4aa384d504537b73b5
   Banks:
-  - {fileID: -869869027673902801}
+  - {fileID: 3548886046695791213}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -576,6 +610,23 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &-2122207758469084440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/atm_inside/Sarah
+  m_EditorClassIdentifier: 
+  Name: Sarah
+  Min: 0
+  Max: 4
+  Default: 1
+  Exists: 1
 --- !u!114 &-2031668563526084386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -608,7 +659,7 @@ MonoBehaviour:
   Path: event:/SFX/sfx_male_eat
   guid: e03c14170fbbe04f8931eefa1a120aaf
   Banks:
-  - {fileID: -869869027673902801}
+  - {fileID: 3548886046695791213}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -654,7 +705,7 @@ MonoBehaviour:
   guid: 24e11e0bd3ad8a47b2ad898b0469ece9
   Banks:
   - {fileID: -5726505839845564076}
-  - {fileID: -869869027673902801}
+  - {fileID: 3548886046695791213}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -662,6 +713,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 393
+--- !u!114 &-1637990000673105776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: gameplay_bad
+  m_EditorClassIdentifier: 
+  Name: gameplay_bad
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
 --- !u!114 &-1433427361001357106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -677,7 +745,7 @@ MonoBehaviour:
   Path: event:/SFX/sfx_female_eat
   guid: b7a8ef9fe8de0d4f8294a6c478516cc3
   Banks:
-  - {fileID: -869869027673902801}
+  - {fileID: 3548886046695791213}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -775,7 +843,7 @@ MonoBehaviour:
   guid: 7df4c35f79d40d4090ee77e61927e052
   Banks:
   - {fileID: -5726505839845564076}
-  - {fileID: -869869027673902801}
+  - {fileID: 3548886046695791213}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -798,7 +866,7 @@ MonoBehaviour:
   Path: event:/SFX/sfx_ui_click
   guid: ff02657159fd8947bc2f894662c7956b
   Banks:
-  - {fileID: -869869027673902801}
+  - {fileID: 3548886046695791213}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -838,7 +906,7 @@ MonoBehaviour:
   Path: event:/SFX/sfx_old_eat
   guid: 4d0a72038d5fea4dbbce7dbcd0f420c8
   Banks:
-  - {fileID: -869869027673902801}
+  - {fileID: 3548886046695791213}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -860,7 +928,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 8762397150518772542}
-  - {fileID: -869869027673902801}
+  - {fileID: 3548886046695791213}
   EditorEvents:
   - {fileID: -7359328970207011003}
   - {fileID: -6291445222323757922}
@@ -884,13 +952,13 @@ MonoBehaviour:
   - {fileID: -7900570054948211165}
   - {fileID: -749185277575641302}
   EditorParameters:
-  - {fileID: -4747838932503383422}
-  - {fileID: -9099412554367750276}
+  - {fileID: 4068989501798388684}
+  - {fileID: -1637990000673105776}
   MasterBanks:
-  - {fileID: -869869027673902801}
+  - {fileID: 3548886046695791213}
   StringsBanks:
   - {fileID: 8762397150518772542}
-  stringsBankWriteTime: 637210971937675983
+  stringsBankWriteTime: 637210974211732404
   cacheVersion: 3
 --- !u!114 &160815567059996719
 MonoBehaviour:
@@ -908,15 +976,32 @@ MonoBehaviour:
   guid: 257188dfc396944a862d9114425159b0
   Banks:
   - {fileID: -5726505839845564076}
-  - {fileID: -869869027673902801}
+  - {fileID: 3548886046695791213}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 3667594453179006063}
+  - {fileID: 575574278957425402}
   MinDistance: 0
   MaxDistance: 0
   Length: 335504
+--- !u!114 &575574278957425402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music_main_loop/neustart
+  m_EditorClassIdentifier: 
+  Name: neustart
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
 --- !u!114 &718846078889776671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -932,7 +1017,7 @@ MonoBehaviour:
   Path: event:/SFX/sfx_dog_eat
   guid: 655e510fc1d843479e818db1dec63a3f
   Banks:
-  - {fileID: -869869027673902801}
+  - {fileID: 3548886046695791213}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1066,6 +1151,41 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &2440140409184701972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/atm_inside/Liam
+  m_EditorClassIdentifier: 
+  Name: Liam
+  Min: 0
+  Max: 4
+  Default: 1
+  Exists: 1
+--- !u!114 &3548886046695791213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637210974211722466
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &3667594453179006063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1083,6 +1203,23 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 1
+--- !u!114 &4068989501798388684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: zwischenscreen
+  m_EditorClassIdentifier: 
+  Name: zwischenscreen
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &4122565738323615674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1098,7 +1235,7 @@ MonoBehaviour:
   Path: event:/ambiences/atm_outside
   guid: 827620a38931404695cff6c45befdb4b
   Banks:
-  - {fileID: -869869027673902801}
+  - {fileID: 3548886046695791213}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1121,15 +1258,15 @@ MonoBehaviour:
   Path: event:/ambiences/atm_inside
   guid: 997bfeb37400884083220efb56d6ea4e
   Banks:
-  - {fileID: -869869027673902801}
+  - {fileID: 3548886046695791213}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 5127619458780752182}
-  - {fileID: 6056704569153472088}
-  - {fileID: 2201840157335587889}
-  - {fileID: -3776360240837142359}
+  - {fileID: -9141669815464180807}
+  - {fileID: -8984955830939370716}
+  - {fileID: 2440140409184701972}
+  - {fileID: -2122207758469084440}
   MinDistance: 0
   MaxDistance: 0
   Length: 82500
@@ -1287,7 +1424,7 @@ MonoBehaviour:
   guid: 21aafba445418c439ab57f265c700ea0
   Banks:
   - {fileID: -5726505839845564076}
-  - {fileID: -869869027673902801}
+  - {fileID: 3548886046695791213}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1345,7 +1482,7 @@ MonoBehaviour:
   Path: event:/Music/music_title_screen
   guid: 7cb92227430f40469a9ade64dba9ad3c
   Banks:
-  - {fileID: -869869027673902801}
+  - {fileID: 3548886046695791213}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1367,9 +1504,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/Audio/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637210971937675983
+  lastModified: 637210974211732404
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 2076
+    Value: 2136
   Exists: 1
