@@ -18,4 +18,4 @@ MonoBehaviour:
   - {fileID: -8823461125961251914, guid: 741c16a214e1f18468709fb08116b4c2, type: 3}
   - {fileID: -5209194171740785868, guid: 741c16a214e1f18468709fb08116b4c2, type: 3}
   homelessName: Gerthrud
-  hunger: 5
+  hunger: 80
