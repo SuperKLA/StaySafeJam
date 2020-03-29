@@ -107,6 +107,7 @@
      <Compile Include="Assets\Scripts\Homeless\HomelessPanel.cs" />
      <Compile Include="Assets\Scripts\Knife.cs" />
      <Compile Include="Assets\Scripts\KnifeNeverFallsDown.cs" />
+     <Compile Include="Assets\Scripts\MainMenuMusic.cs" />
      <Compile Include="Assets\Scripts\Menue\AudioFiles.cs" />
      <Compile Include="Assets\Scripts\Menue\EndScreen.cs" />
      <Compile Include="Assets\Scripts\Menue\HomelessOverView.cs" />
