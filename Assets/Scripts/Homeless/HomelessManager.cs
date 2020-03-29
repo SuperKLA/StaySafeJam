@@ -88,4 +88,14 @@ public class HomelessManager : MonoBehaviour
             homeless.currentHunger = this.HungerStartValues[c];
         }
     }
+
+    public bool IsLastLevelAndHasWon()
+    {
+        var homelessConfig = this.homelessConfig;
+        var round = homelessConfig.CurrentRound;
+        var isLastLevel = round >= this.homelessConfig.RoundsToWin;
+        var allAlive = !this.IsSomeDead();
+
+        return isLastLevel && allAlive;
+    }
 }
