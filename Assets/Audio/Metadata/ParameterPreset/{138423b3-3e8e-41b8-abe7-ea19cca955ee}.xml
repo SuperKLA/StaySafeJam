@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{138423b3-3e8e-41b8-abe7-ea19cca955ee}">
+		<property name="name">
+			<value>Liam</value>
+		</property>
+		<relationship name="folder">
+			<destination>{fb90708d-728a-4043-8a15-869603bd6cb3}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{154514e7-0572-409c-b880-c8638a62126b}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{154514e7-0572-409c-b880-c8638a62126b}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>4</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>starving</value>
+			<value>normal</value>
+			<value>happy</value>
+			<value>obese</value>
+		</property>
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+	</object>
+</objects>
