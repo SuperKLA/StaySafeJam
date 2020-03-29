@@ -148,7 +148,7 @@ MonoBehaviour:
   name: Pizza
   CutSound: event:/SFX/chop_specifics/sfx_chop_pizza
   category: 3
-  Calories: 2000
+  Calories: 845
   Volume: 0.46264887
 --- !u!114 &6947791147300185294
 MonoBehaviour:

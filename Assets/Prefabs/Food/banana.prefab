@@ -136,7 +136,7 @@ MonoBehaviour:
   name: Banana
   CutSound: event:/SFX/chop_specifics/sfx_chop_zucchini
   category: 0
-  Calories: 500
+  Calories: 150
   Volume: 0.43878356
 --- !u!114 &937717843087997088
 MonoBehaviour:

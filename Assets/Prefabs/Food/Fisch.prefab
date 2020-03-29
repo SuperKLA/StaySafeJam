@@ -148,7 +148,7 @@ MonoBehaviour:
   name: Fish
   CutSound: event:/SFX/chop_specifics/sfx_chop_chicken
   category: 2
-  Calories: 1000
+  Calories: 250
   Volume: 0.057681575
 --- !u!114 &-6187769733058663925
 MonoBehaviour:
