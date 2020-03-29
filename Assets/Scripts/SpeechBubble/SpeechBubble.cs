@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,7 +9,7 @@ public class SpeechBubble : MonoBehaviour
     bool iAmActive = false;
 
     float TimeToDestroy;
-    public Text myText;
+    public TMP_Text myText;
     public Image myImage;
 
     public void ShowSpeechBubble(SpeechBubbleData data)

@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: event:/SFX/sfx_chop_crunchy
   guid: 19b0131f3cdd6c428c72657e68f2ac47
   Banks:
-  - {fileID: -3808656830937940910}
+  - {fileID: -1399879715467637354}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -38,7 +38,7 @@ MonoBehaviour:
   Path: event:/SFX/sfx_chop_generic
   guid: 4cdb1e33010b9d4db6c541870e6c212c
   Banks:
-  - {fileID: -3808656830937940910}
+  - {fileID: -1399879715467637354}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -61,7 +61,7 @@ MonoBehaviour:
   Path: event:/SFX/sfx_chop_pizza
   guid: 21aafba445418c439ab57f265c700ea0
   Banks:
-  - {fileID: -3808656830937940910}
+  - {fileID: -1399879715467637354}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -86,7 +86,7 @@ MonoBehaviour:
   lastModified: 637210328491674894
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &-2892498796348298902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102,7 +102,7 @@ MonoBehaviour:
   Path: event:/SFX/sfx_chop_salad
   guid: 8d40f94f05707444b10ce423150ba521
   Banks:
-  - {fileID: -3808656830937940910}
+  - {fileID: -1399879715467637354}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -125,7 +125,7 @@ MonoBehaviour:
   Path: event:/SFX/sfx_chop_lemon
   guid: 7df4c35f79d40d4090ee77e61927e052
   Banks:
-  - {fileID: -3808656830937940910}
+  - {fileID: -1399879715467637354}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -148,7 +148,7 @@ MonoBehaviour:
   Path: event:/SFX/sfx_chop_chocolate
   guid: 0b4cf1c5f891c2439be8a833d0876581
   Banks:
-  - {fileID: -3808656830937940910}
+  - {fileID: -1399879715467637354}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -157,6 +157,24 @@ MonoBehaviour:
   MaxDistance: 0
   Length: 480
 --- !u!114 &-1529353462712169901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637210732094240702
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-1399879715467637354
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -189,7 +207,7 @@ MonoBehaviour:
   Path: event:/SFX/sfx_chop_chicken
   guid: f5b6cdf56585c64ba7e59cc9c2f3c859
   Banks:
-  - {fileID: -3808656830937940910}
+  - {fileID: -1399879715467637354}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -211,7 +229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 8762397150518772542}
-  - {fileID: -3808656830937940910}
+  - {fileID: -1399879715467637354}
   EditorEvents:
   - {fileID: -1860263477119951003}
   - {fileID: -7839345661075653507}
@@ -223,10 +241,10 @@ MonoBehaviour:
   - {fileID: -1382053380862718235}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -3808656830937940910}
+  - {fileID: -1399879715467637354}
   StringsBanks:
   - {fileID: 8762397150518772542}
-  stringsBankWriteTime: 637210328491684866
+  stringsBankWriteTime: 637210732094250399
   cacheVersion: 3
 --- !u!114 &1104055597976300756
 MonoBehaviour:
@@ -243,7 +261,7 @@ MonoBehaviour:
   Path: event:/SFX/sfx_chop_zucchini
   guid: 24e11e0bd3ad8a47b2ad898b0469ece9
   Banks:
-  - {fileID: -3808656830937940910}
+  - {fileID: -1399879715467637354}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -301,7 +319,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/Audio/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637210328491684866
+  lastModified: 637210732094250399
   LoadResult: 0
   FileSizes:
   - Name: Desktop

@@ -7,8 +7,8 @@ public class TestScript : MonoBehaviour
     public bool SetText;
     public string Text;
     public float LifeTime;
+    public SpeechBubbleSpeaker speaker;
 
-    public SpeechBubble bubbleToTest;
 
     // Update is called once per frame
     void Update()
@@ -16,7 +16,7 @@ public class TestScript : MonoBehaviour
         if(SetText)
         {
             SetText = false;
-            bubbleToTest.ShowSpeechBubble(new SpeechBubbleData(Text, LifeTime, SpeechBubblePosition.Bottom));
+            FindObjectOfType<SpeechBubbleService>().SpawnSpeechBubble(new SpeechBubbleData(Text, LifeTime, speaker));
         }
     }
 }

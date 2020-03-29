@@ -8,21 +8,21 @@ public class SpeechBubbleData
 {
     public string text;
     public float LifeTime;
-    public SpeechBubblePosition position;
+    public SpeechBubbleSpeaker speaker;
 
-    public SpeechBubbleData(string text, float lifeTime, SpeechBubblePosition position)
+    public SpeechBubbleData(string text, float lifeTime, SpeechBubbleSpeaker speaker)
     {
         this.text = text;
         LifeTime = lifeTime;
-        this.position = position;
+        this.speaker = speaker;
     }
 }
 
-public enum SpeechBubblePosition
+public enum SpeechBubbleSpeaker
 {
-    Top,
-    Bottom,
-    Left,
-    Right
+    Liam,
+    Sarah,
+    Gerthrud,
+    Gunner
 }
 

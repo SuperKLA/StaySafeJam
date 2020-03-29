@@ -6,28 +6,27 @@ using UnityEngine;
 
 public class SpeechBubbleService : MonoBehaviour
 {
-    GameObject SpeechBubblePrefab;
+    SpeechBubbleSelector selector;
 
-
-
-    // Update is called once per frame
-    void Update()
+    public void SpawnSpeechBubble(SpeechBubbleData data)
     {
-
+        if (IsSelectorNull())
+        {
+            Debug.Log("SpeechBubbleSelector nicht gefunden");
+            return;
+        }
+        FindSpeechBubble(data.speaker).ShowSpeechBubble(data);
     }
 
-    public void SpawnSpeechBubble(SpeechBubbleData bubble)
+    private SpeechBubble FindSpeechBubble(SpeechBubbleSpeaker speaker)
     {
-        //GameObject newSpeechBubble = Instantiate(SpeechBubblePrefab, new Vector3(bubble.spawnPosition.x, 0, bubble.spawnPosition.y), Quaternion.identity);
-        //newSpeechBubble.AddComponent(typeof(SpeechBubble));
-        //newSpeechBubble.GetComponent<SpeechBubble>().
+        return selector.GetSpeechBubble(speaker);
     }
 
-
-    //private SpeechBubble GetPrefab(SpeechBubble bubble)
-    //{
-
-    //}
-
-
+    private bool IsSelectorNull()
+    {
+        if (selector == null)
+            selector = FindObjectOfType<SpeechBubbleSelector>();
+        return selector == null;
+    }
 }
