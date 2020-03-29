@@ -112,6 +112,11 @@
      <Compile Include="Assets\Scripts\Menue\HomelessOverView.cs" />
      <Compile Include="Assets\Scripts\Menue\MenueWithAudio.cs" />
      <Compile Include="Assets\Scripts\Menue\StartMenue.cs" />
+     <Compile Include="Assets\Scripts\SpeechBubble\SpeechBubble.cs" />
+     <Compile Include="Assets\Scripts\SpeechBubble\SpeechBubbleData.cs" />
+     <Compile Include="Assets\Scripts\SpeechBubble\SpeechBubbleSelector.cs" />
+     <Compile Include="Assets\Scripts\SpeechBubble\SpeechBubbleService.cs" />
+     <Compile Include="Assets\Scripts\SpeechBubble\TestScript.cs" />
      <Compile Include="Assets\Scripts\Utils.cs" />
      <None Include="Assets\Audio\Metadata\Group\{3f60f39c-0347-4778-a992-9fddb414507f}.xml" />
      <None Include="Assets\Audio\Metadata\AudioFile\{15daa500-1097-4a2b-b750-71c0b2722db7}.xml" />

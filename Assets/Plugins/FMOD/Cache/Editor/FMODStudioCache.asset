@@ -16,7 +16,7 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-8531285484391366365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33,7 +33,7 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-8392394879149736910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49,7 +49,7 @@ MonoBehaviour:
   Path: event:/SFX/chop_specifics/sfx_chop_crunchy
   guid: 19b0131f3cdd6c428c72657e68f2ac47
   Banks:
-  - {fileID: 8289554112240534550}
+  - {fileID: 7016713738094531093}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -72,7 +72,7 @@ MonoBehaviour:
   Path: event:/SFX/chop_specifics/sfx_chop_chicken
   guid: f5b6cdf56585c64ba7e59cc9c2f3c859
   Banks:
-  - {fileID: 8289554112240534550}
+  - {fileID: 7016713738094531093}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -117,7 +117,7 @@ MonoBehaviour:
   Path: event:/SFX/sfx_chop_generic
   guid: 4cdb1e33010b9d4db6c541870e6c212c
   Banks:
-  - {fileID: 8289554112240534550}
+  - {fileID: 7016713738094531093}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -162,7 +162,7 @@ MonoBehaviour:
   Path: event:/SFX/chop_specifics/sfx_chop_chocolate
   guid: 0b4cf1c5f891c2439be8a833d0876581
   Banks:
-  - {fileID: 8289554112240534550}
+  - {fileID: 7016713738094531093}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -185,7 +185,7 @@ MonoBehaviour:
   Path: event:/SFX/chop_specifics/sfx_chop_salad
   guid: 8d40f94f05707444b10ce423150ba521
   Banks:
-  - {fileID: 8289554112240534550}
+  - {fileID: 7016713738094531093}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -193,6 +193,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 418
+--- !u!114 &-3849421246427525796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: "es l\xE4uft schlecht"
+  m_EditorClassIdentifier: 
+  Name: "es l\xE4uft schlecht"
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
 --- !u!114 &-3808656830937940910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,7 +244,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-2892498796348298902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -272,6 +289,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 440
+--- !u!114 &-2031668563526084386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: zwischenscreen
+  m_EditorClassIdentifier: 
+  Name: zwischenscreen
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-1860263477119951003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,7 +343,7 @@ MonoBehaviour:
   Path: event:/SFX/chop_specifics/sfx_chop_zucchini
   guid: 24e11e0bd3ad8a47b2ad898b0469ece9
   Banks:
-  - {fileID: 8289554112240534550}
+  - {fileID: 7016713738094531093}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -354,7 +388,7 @@ MonoBehaviour:
   Path: event:/SFX/chop_specifics/sfx_chop_lemon
   guid: 7df4c35f79d40d4090ee77e61927e052
   Banks:
-  - {fileID: 8289554112240534550}
+  - {fileID: 7016713738094531093}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -376,7 +410,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 8762397150518772542}
-  - {fileID: 8289554112240534550}
+  - {fileID: 7016713738094531093}
   EditorEvents:
   - {fileID: -7359328970207011003}
   - {fileID: -6291445222323757922}
@@ -388,13 +422,13 @@ MonoBehaviour:
   - {fileID: -5815555843883947532}
   - {fileID: -8060155334521671257}
   EditorParameters:
-  - {fileID: -3611851253761385015}
-  - {fileID: -8863309740517226250}
+  - {fileID: -2031668563526084386}
+  - {fileID: -3849421246427525796}
   MasterBanks:
-  - {fileID: 8289554112240534550}
+  - {fileID: 7016713738094531093}
   StringsBanks:
   - {fileID: 8762397150518772542}
-  stringsBankWriteTime: 637210778280456090
+  stringsBankWriteTime: 637210826990288454
   cacheVersion: 3
 --- !u!114 &160815567059996719
 MonoBehaviour:
@@ -411,12 +445,12 @@ MonoBehaviour:
   Path: event:/Music/music_main_loop
   guid: 257188dfc396944a862d9114425159b0
   Banks:
-  - {fileID: 8289554112240534550}
+  - {fileID: 7016713738094531093}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -8531285484391366365}
+  - {fileID: 4871849841942639109}
   MinDistance: 0
   MaxDistance: 0
   Length: 294545
@@ -442,6 +476,41 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 393
+--- !u!114 &4871849841942639109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music_main_loop/neustart
+  m_EditorClassIdentifier: 
+  Name: neustart
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &7016713738094531093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637210826990278483
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &7233218685099085276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -475,7 +544,7 @@ MonoBehaviour:
   Path: event:/SFX/chop_specifics/sfx_chop_pizza
   guid: 21aafba445418c439ab57f265c700ea0
   Banks:
-  - {fileID: 8289554112240534550}
+  - {fileID: 7016713738094531093}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -500,7 +569,7 @@ MonoBehaviour:
   lastModified: 637210778280446120
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &8762397150518772542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -515,7 +584,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/Audio/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637210778280456090
+  lastModified: 637210826990288454
   LoadResult: 0
   FileSizes:
   - Name: Desktop
