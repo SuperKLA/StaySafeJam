@@ -105,8 +105,11 @@
      <Compile Include="Assets\Scripts\Homeless\HomelessOverviewManager.cs" />
      <Compile Include="Assets\Scripts\Homeless\HomelessPanel.cs" />
      <Compile Include="Assets\Scripts\Knife.cs" />
+     <Compile Include="Assets\Scripts\KnifeNeverFallsDown.cs" />
      <Compile Include="Assets\Scripts\Menue\AudioFiles.cs" />
      <Compile Include="Assets\Scripts\Menue\EndScreen.cs" />
+     <Compile Include="Assets\Scripts\Menue\HomelessOverView.cs" />
+     <Compile Include="Assets\Scripts\Menue\MenueWithAudio.cs" />
      <Compile Include="Assets\Scripts\Menue\StartMenue.cs" />
      <Compile Include="Assets\Scripts\Utils.cs" />
      <None Include="Assets\Audio\Metadata\AudioFile\{15daa500-1097-4a2b-b750-71c0b2722db7}.xml" />
