@@ -18,4 +18,4 @@ MonoBehaviour:
   - {fileID: -3587543222833864329, guid: c67373d0af1400844a3d64c80930ddd1, type: 3}
   - {fileID: -4386900868337761438, guid: c67373d0af1400844a3d64c80930ddd1, type: 3}
   homelessName: Liam
-  hunger: 85
+  hunger: 75

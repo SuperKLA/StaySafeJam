@@ -18,4 +18,4 @@ MonoBehaviour:
   - {fileID: -7958779701355259416, guid: 5355cef300b20524d80d6ab1b63ea00f, type: 3}
   - {fileID: -6418435557987706475, guid: 5355cef300b20524d80d6ab1b63ea00f, type: 3}
   homelessName: Gunner
-  hunger: 60
+  hunger: 25

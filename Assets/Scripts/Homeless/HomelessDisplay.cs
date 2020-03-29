@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;   
 
@@ -8,7 +9,7 @@ public class HomelessDisplay : MonoBehaviour
     public HomelessPanel HomelessPanel;
 
     public Image homelessPortrait;
-    public Text homelessName;
+    public TMP_Text homelessName;
     public Slider homelessHunger;
     public Image homlessHungerBar;
 
@@ -34,7 +35,9 @@ public class HomelessDisplay : MonoBehaviour
 
     private void ChangeHungerBarColor()
     {
-        if (homelessHunger.value >= 75)
+        if (homelessHunger.value >= 90)
+            homlessHungerBar.color = yellow;
+        else if (homelessHunger.value >= 75)
             homlessHungerBar.color = green;
         else if (homelessHunger.value >= 50)
             homlessHungerBar.color = yellow;
