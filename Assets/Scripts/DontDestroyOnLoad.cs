@@ -10,7 +10,9 @@ public class DontDestroyOnLoad : MonoBehaviour
     {
         if (Current != null)
         {
-            MainMenuMusic.Current.Stop();
+            if(MainMenuMusic.Current != null)
+                MainMenuMusic.Current.Stop();
+            
             gameObject.SetActive(false);
             MonoBehaviour.Destroy(gameObject);
             return;
