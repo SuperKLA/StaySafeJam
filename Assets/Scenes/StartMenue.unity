@@ -299,7 +299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc9991c3645148aeb799278591bce64a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  homelessConfig: {fileID: 1235437681}
+  homelessConfig: {fileID: 1019251426}
   AllHomeLess: []
 --- !u!1 &230555987
 GameObject:
@@ -500,53 +500,6 @@ Transform:
   m_Father: {fileID: 804280071}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &538416423
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 538416424}
-  - component: {fileID: 538416425}
-  m_Layer: 0
-  m_Name: Homeless1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &538416424
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 538416423}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1235437680}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &538416425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 538416423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cfd07856ce460c40bc09090e1cc14ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: Homeless1
-  Name: Homeless1
-  currentHunger: 0
-  HungerIncrease: {x: 10, y: 20}
 --- !u!1 &620077465
 GameObject:
   m_ObjectHideFlags: 0
@@ -939,53 +892,93 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 864994026}
   m_CullTransparentMesh: 0
---- !u!1 &950718647
-GameObject:
+--- !u!1001 &1019251424
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 950718648}
-  - component: {fileID: 950718649}
-  m_Layer: 0
-  m_Name: Homeless2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &950718648
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1561363735}
+    m_Modifications:
+    - target: {fileID: 1822594107317828780, guid: 151798a5950154d409bd029ec4340505,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822594107317828780, guid: 151798a5950154d409bd029ec4340505,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822594107317828780, guid: 151798a5950154d409bd029ec4340505,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822594107317828780, guid: 151798a5950154d409bd029ec4340505,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822594107317828780, guid: 151798a5950154d409bd029ec4340505,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822594107317828780, guid: 151798a5950154d409bd029ec4340505,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822594107317828780, guid: 151798a5950154d409bd029ec4340505,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822594107317828780, guid: 151798a5950154d409bd029ec4340505,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822594107317828780, guid: 151798a5950154d409bd029ec4340505,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822594107317828780, guid: 151798a5950154d409bd029ec4340505,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822594107317828780, guid: 151798a5950154d409bd029ec4340505,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822594107317828781, guid: 151798a5950154d409bd029ec4340505,
+        type: 3}
+      propertyPath: m_Name
+      value: HomelessConfig
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 151798a5950154d409bd029ec4340505, type: 3}
+--- !u!4 &1019251425 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1822594107317828780, guid: 151798a5950154d409bd029ec4340505,
+    type: 3}
+  m_PrefabInstance: {fileID: 1019251424}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 950718647}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1235437680}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &950718649
+--- !u!114 &1019251426 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1822594107317828779, guid: 151798a5950154d409bd029ec4340505,
+    type: 3}
+  m_PrefabInstance: {fileID: 1019251424}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 950718647}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cfd07856ce460c40bc09090e1cc14ee, type: 3}
+  m_Script: {fileID: 11500000, guid: 08f4a6bc3e4ed5642b7410dafb25b861, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: Homeless2
-  Name: Homeless2
-  currentHunger: 0
-  HungerIncrease: {x: 10, y: 20}
 --- !u!1 &1139571654
 GameObject:
   m_ObjectHideFlags: 0
@@ -1158,105 +1151,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1191945709}
   m_CullTransparentMesh: 0
---- !u!1 &1235437679
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1235437680}
-  - component: {fileID: 1235437681}
-  m_Layer: 0
-  m_Name: HomelessConfig
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1235437680
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1235437679}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 538416424}
-  - {fileID: 950718648}
-  - {fileID: 1332289578}
-  - {fileID: 1893393269}
-  m_Father: {fileID: 1561363735}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1235437681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1235437679}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08f4a6bc3e4ed5642b7410dafb25b861, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  homelessList:
-  - {fileID: 538416425}
-  - {fileID: 950718649}
-  - {fileID: 1332289579}
-  - {fileID: 1893393268}
---- !u!1 &1332289577
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1332289578}
-  - component: {fileID: 1332289579}
-  m_Layer: 0
-  m_Name: Homeless3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1332289578
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1332289577}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1235437680}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1332289579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1332289577}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cfd07856ce460c40bc09090e1cc14ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: Homeless3
-  Name: Homeless3
-  currentHunger: 0
-  HungerIncrease: {x: 10, y: 20}
 --- !u!1 &1561363734
 GameObject:
   m_ObjectHideFlags: 0
@@ -1284,7 +1178,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1235437680}
+  - {fileID: 1019251425}
   m_Father: {fileID: 804280071}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1518,53 +1412,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 804280071}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1893393267
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1893393269}
-  - component: {fileID: 1893393268}
-  m_Layer: 0
-  m_Name: Homeless4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1893393268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1893393267}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cfd07856ce460c40bc09090e1cc14ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: Homeless4
-  Name: Homeless4
-  currentHunger: 0
-  HungerIncrease: {x: 10, y: 20}
---- !u!4 &1893393269
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1893393267}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1235437680}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1929970572
 GameObject:

@@ -90,7 +90,7 @@ public class Draggable : MonoBehaviour
         Ray        ray    = Camera.main.ScreenPointToRay(Input.mousePosition);
 
         Debug.DrawRay(ray.origin, ray.direction * 1000, Color.red, 1000, false);
-
+        
         if (Physics.Raycast(ray.origin, ray.direction, out hit, 1000))
         {
             target = hit.collider.gameObject;

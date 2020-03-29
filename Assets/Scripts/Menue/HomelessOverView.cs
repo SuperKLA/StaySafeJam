@@ -14,7 +14,9 @@ public class HomelessOverView : MenueWithAudio
 
     public void LoadScene()
     {
-        SceneManager.LoadScene(sceneNextClick);
+        //aka play next round
+        HomelessManager.Current.IncreaseHunger();
+        SceneManager.LoadScene(this.sceneNextClick);
     }
 
     protected override void StartBackgroundMusik()
