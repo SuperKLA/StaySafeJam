@@ -5,7 +5,8 @@ public class DraggableRecevoir : MonoBehaviour
 {
     public event Action OnDragEnabled;
     public event Action OnDragEnd;
-    
+
+    public Bounds? MaxMoveBounds;
     public Vector3 Offset = new Vector3(0,0.2f,0);
     
     public void OnDragStarting()

@@ -4,7 +4,7 @@ public class CuttingBoard : MonoBehaviour
 {
     public static CuttingBoard Current;
 
-    public GameObject FoodOnCutBoard;
+    public BoxCollider OwnCollider;
     
     private void Start()
     {
