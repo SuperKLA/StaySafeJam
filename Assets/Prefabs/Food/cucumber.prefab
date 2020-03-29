@@ -135,7 +135,7 @@ MonoBehaviour:
   name: Cucumber
   CutSound: event:/SFX/chop_specifics/sfx_chop_zucchini
   category: 0
-  Calories: 200
+  Calories: 40
   Volume: 0.035697713
 --- !u!114 &772047758359345580
 MonoBehaviour:

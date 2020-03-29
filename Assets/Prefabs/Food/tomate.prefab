@@ -148,7 +148,7 @@ MonoBehaviour:
   name: Tomato
   CutSound: event:/SFX/chop_specifics/sfx_chop_lemon
   category: 0
-  Calories: 200
+  Calories: 35
   Volume: 0.0059245247
 --- !u!114 &8163335021169526009
 MonoBehaviour:

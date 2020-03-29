@@ -148,7 +148,7 @@ MonoBehaviour:
   name: Wrap
   CutSound: event:/SFX/chop_specifics/sfx_chop_pizza
   category: 3
-  Calories: 500
+  Calories: 110
   Volume: 0.2136454
 --- !u!114 &9055495678889215628
 MonoBehaviour:
