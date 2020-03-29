@@ -869,7 +869,7 @@ MonoBehaviour:
   Event: event:/Music/music_title_screen
   PlayEvent: 1
   StopEvent: 12
-  AllowFadeout: 1
+  AllowFadeout: 0
   TriggerOnce: 0
   Preload: 0
   Params: []
