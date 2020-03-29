@@ -1900,10 +1900,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d07066c3013074a48b763262d30e6734, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Liam: {fileID: 0}
-  Gunner: {fileID: 0}
-  Sarah: {fileID: 0}
-  Gerthrud: {fileID: 0}
+  Liam: {fileID: 11400000, guid: a855ab8ae1dfda6429584061dc74d692, type: 2}
+  Gunner: {fileID: 11400000, guid: ba6ecb010cba910409ae0894fb7e4d3d, type: 2}
+  Sarah: {fileID: 11400000, guid: a821bac928304fb41aadf03cfa1daa24, type: 2}
+  Gerthrud: {fileID: 11400000, guid: b8065a6fa3207e84083f9b322e6176be, type: 2}
 --- !u!1 &1332859591
 GameObject:
   m_ObjectHideFlags: 0

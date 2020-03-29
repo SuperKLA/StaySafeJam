@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1822594107167709142}
   - component: {fileID: 1822594107167709141}
   m_Layer: 0
-  m_Name: Doggo
+  m_Name: Liam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: Homeless2
-  Name: Doggo
+  Name: Liam
   currentHunger: 33
   HungerIncrease: {x: 10, y: 20}
 --- !u!1 &1822594107212404188
@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 1822594107212404187}
   - component: {fileID: 1822594107212404186}
   m_Layer: 0
-  m_Name: Mausmann
+  m_Name: Gunner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: Homeless3
-  Name: Mausmann
+  Name: Gunner
   currentHunger: 28
   HungerIncrease: {x: 10, y: 20}
 --- !u!1 &1822594107317828781
@@ -158,7 +158,7 @@ GameObject:
   - component: {fileID: 1822594107321410402}
   - component: {fileID: 1822594107321410401}
   m_Layer: 0
-  m_Name: Babuschka
+  m_Name: Sarah
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: Homeless1
-  Name: Babuschka
+  Name: Sarah
   currentHunger: 25
   HungerIncrease: {x: 10, y: 20}
 --- !u!1 &1822594107635006766
@@ -205,7 +205,7 @@ GameObject:
   - component: {fileID: 1822594107635006765}
   - component: {fileID: 1822594107635006764}
   m_Layer: 0
-  m_Name: MuetzenFrau
+  m_Name: Gerthrud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -238,6 +238,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: Homeless4
-  Name: MuetzenFrau
+  Name: Gerthrud
   currentHunger: 27
   HungerIncrease: {x: 10, y: 20}
