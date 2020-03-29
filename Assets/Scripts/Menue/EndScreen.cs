@@ -10,6 +10,7 @@ public class EndScreen : MenueWithAudio
     {
         base.Start();
         StartBackgroundMusik();
+        HomelessManager.Current.ResetHomeless();
     }
 
     // Update is called once per frame
