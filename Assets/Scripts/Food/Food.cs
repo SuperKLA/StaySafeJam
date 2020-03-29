@@ -11,6 +11,7 @@ public class Food : MonoBehaviour
     public Material          OwnMaterial;
 
     public string       name;
+    public string CutSound;
     public FoodCategory category;
     public float        Calories;
     public float        Volume;

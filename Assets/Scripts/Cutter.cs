@@ -48,6 +48,8 @@ public class Cutter : MonoBehaviour
 
             if (pieces == null) continue;
             
+            FMODUnity.RuntimeManager.PlayOneShot(cutObjFood.CutSound, cutObj.transform.position);
+            
             for (int i = 0; i < pieces.Length; i++)
             {
                 var piece = pieces[i];
@@ -78,7 +80,8 @@ public class Cutter : MonoBehaviour
                 food.Calories = cutObjFood.Calories * partFactor;
                 food.category = cutObjFood.category;
                 food.Draggable = drag;
-                
+                food.CutSound = cutObjFood.CutSound;
+
                 piece.tag = "Sliceable";
                 
             }

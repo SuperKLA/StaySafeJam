@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5240429803124217607}
   - component: {fileID: 3881929564028549591}
   - component: {fileID: 452583229569509164}
+  - component: {fileID: 9055495678889215628}
   m_Layer: 0
   m_Name: Avocadorolle
   m_TagString: Sliceable
@@ -145,6 +146,30 @@ MonoBehaviour:
   InnerTexture: {fileID: 2800000, guid: db68e930650ac6b4f89f3ad3646fd8b4, type: 3}
   OwnMaterial: {fileID: 2100000, guid: f651e55248fd27f44b3563112c1f62ff, type: 2}
   name: Wrap
+  CutSound: event:/SFX/chop_specifics/sfx_chop_pizza
   category: 3
   Calories: 500
   Volume: 0.2136454
+--- !u!114 &9055495678889215628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3772525852568371132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/chop_specifics/sfx_chop_pizza
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0

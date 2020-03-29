@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class StartMenue : MenueWithAudio
 {
     public string scenePlayClick;
+    public GameObject MainMusic;
 
     private Animator animator;
 
@@ -12,10 +13,12 @@ public class StartMenue : MenueWithAudio
         base.Start();
         this.animator = GetComponent<Animator>();
         this.StartBackgroundMusik();
+        MainMusic.gameObject.SetActive(false);
     }
 
     public void PlayBtnCLick()
     {
+        MainMusic.gameObject.SetActive(true);
         animator.SetTrigger("LoadScene");
     }
 

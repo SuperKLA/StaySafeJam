@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2368864345072845314}
   - component: {fileID: 5743200977239539486}
   - component: {fileID: 8441290210487928780}
+  - component: {fileID: -10424051885436994}
   m_Layer: 0
   m_Name: Donut
   m_TagString: Sliceable
@@ -132,6 +133,7 @@ MonoBehaviour:
   InnerTexture: {fileID: 2800000, guid: 3a50e3168c7422e47acec0f91ef3098f, type: 3}
   OwnMaterial: {fileID: 2100000, guid: d4ff93ceb58e9d84c9d1d93824ec8e3e, type: 2}
   name: Donut
+  CutSound: event:/SFX/chop_specifics/sfx_chop_chocolate
   category: 3
   Calories: 500
   Volume: 0.19068953
@@ -148,3 +150,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Offset: {x: 0, y: 0.2, z: 0}
+--- !u!114 &-10424051885436994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664482522732400723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/chop_specifics/sfx_chop_chocolate
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0

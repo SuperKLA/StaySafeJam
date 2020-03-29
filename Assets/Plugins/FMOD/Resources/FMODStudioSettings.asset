@@ -15,7 +15,7 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: Assets\Audio\Dinner Four One.fspro
+  sourceProjectPath: Assets/Audio/Dinner Four One.fspro
   sourceBankPath: Assets\Audio\Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1

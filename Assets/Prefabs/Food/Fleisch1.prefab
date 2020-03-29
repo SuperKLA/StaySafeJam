@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5359920989382325120}
   - component: {fileID: 8529400156482620488}
   - component: {fileID: 8954276659599937889}
+  - component: {fileID: 54978246825281967}
   m_Layer: 0
   m_Name: Fleisch1
   m_TagString: Sliceable
@@ -132,6 +133,7 @@ MonoBehaviour:
   InnerTexture: {fileID: 2800000, guid: b3b6a277d791ff04ea334b542af6a15b, type: 3}
   OwnMaterial: {fileID: 2100000, guid: ec8814af413a1d14cb798453b2ac4647, type: 2}
   name: Meat
+  CutSound: event:/SFX/chop_specifics/sfx_chop_chicken
   category: 1
   Calories: 1000
   Volume: 0.17293851
@@ -148,3 +150,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Offset: {x: 0, y: 0.2, z: 0}
+--- !u!114 &54978246825281967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5359920989382325121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/chop_specifics/sfx_chop_chicken
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0

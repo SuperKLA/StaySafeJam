@@ -7,6 +7,7 @@ public class Knife : MonoBehaviour
 {
     public        Rigidbody         OwnRigidbody;
     public        DraggableRecevoir KnifeDragable;
+    public FMOD.Studio.EventInstance CutSound;
     public static Knife             Current;
 
     public                  GameObject KnifeLines;
@@ -129,6 +130,8 @@ public class Knife : MonoBehaviour
     public void OnKnifeIsCutting()
     {
         //Sound spielen
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/sfx_chop_generic", this.transform.position);
+        
         var position = Draggable.Current.CurrentDragPosition;
         var normal   = -this.transform.up;
 
