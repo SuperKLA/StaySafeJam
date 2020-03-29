@@ -13,6 +13,12 @@ public class StartMenue : MenueWithAudio
         base.Start();
         this.animator = GetComponent<Animator>();
         this.StartBackgroundMusik();
+
+        if (this.MainMusic == null && MainMenuMusic.Current != null)
+        {
+            this.MainMusic = MainMenuMusic.Current.gameObject;
+        }
+        
         MainMusic.gameObject.SetActive(false);
         
         var master = FMODUnity.RuntimeManager.GetBus("bus:/Master");
@@ -21,6 +27,11 @@ public class StartMenue : MenueWithAudio
 
     public void PlayBtnCLick()
     {
+        if (this.MainMusic == null && MainMenuMusic.Current != null)
+        {
+            this.MainMusic = MainMenuMusic.Current.gameObject;
+        }
+        
         MainMusic.gameObject.SetActive(true);
         animator.SetTrigger("LoadScene");
     }

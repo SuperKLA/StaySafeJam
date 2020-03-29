@@ -11,7 +11,10 @@ public class MainMenuMusic : MonoBehaviour
     {
         Current = this;
 
-        if (InitDone) return;
+        if (InitDone)
+        {
+            return;
+        }
         
         this.MASTER = FMODUnity.RuntimeManager.GetBus("bus:/Master");
         
@@ -35,5 +38,12 @@ public class MainMenuMusic : MonoBehaviour
         if (!InitDone) return;
 
         this.MASTER.setVolume(val);
+    }
+
+    public void Stop()
+    {
+        if (!InitDone) return;
+
+        this.AUDIO_MainMusic.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
     }
 }
