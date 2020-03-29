@@ -46,6 +46,11 @@ public class StartMenue : MenueWithAudio
         Application.Quit();
     }
 
+    public void CreditsBtnClick()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+
     public void LoadScene()
     {
         if (MainMenuMusic.Current != null)
