@@ -15,7 +15,8 @@ public class SpeechBubbleService : MonoBehaviour
             Debug.Log("SpeechBubbleSelector nicht gefunden");
             return;
         }
-        FindSpeechBubble(data.speaker).ShowSpeechBubble(data);
+
+        FindSpeechBubble(data.speaker).ShowSpeechBubble(CheckGunnerText(data));
     }
 
     private SpeechBubble FindSpeechBubble(SpeechBubbleSpeaker speaker)
@@ -28,5 +29,18 @@ public class SpeechBubbleService : MonoBehaviour
         if (selector == null)
             selector = FindObjectOfType<SpeechBubbleSelector>();
         return selector == null;
+    }
+
+    private SpeechBubbleData CheckGunnerText(SpeechBubbleData data)
+    {
+        if (data.speaker == SpeechBubbleSpeaker.Gunner)
+        {
+            if (Random.Range(0, 100) > 50)
+                data.text = "Wooooof!";
+            else
+                data.text = "Grrrrrrrt!";
+
+        }
+        return data;
     }
 }
