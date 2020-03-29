@@ -19,10 +19,10 @@ public class StartMenue : MenueWithAudio
             this.MainMusic = MainMenuMusic.Current.gameObject;
         }
         
-        // if (MainMenuMusic.Current != null)
-        // {
-        //     MainMenuMusic.Current.StopWinLoseSound();
-        // }
+        if (MainMenuMusic.Current != null)
+        {
+            MainMenuMusic.Current.StopWinLoseSound();
+        }
         
         MainMusic.gameObject.SetActive(false);
         

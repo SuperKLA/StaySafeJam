@@ -11,6 +11,7 @@ public class WinScreen : MenueWithAudio
         base.Start();
         StartBackgroundMusik();
         HomelessManager.Current.ResetHomeless();
+        MainMenuMusic.Current.PlayWinSound();
     }
 
     // Update is called once per frame
@@ -21,7 +22,6 @@ public class WinScreen : MenueWithAudio
 
     public void LoadScene()
     {
-        //MainMenuMusic.Current.PlayWinSound();
         SceneManager.LoadScene(sceneBackClick);
     }
 

@@ -11,6 +11,7 @@ public class EndScreen : MenueWithAudio
         base.Start();
         StartBackgroundMusik();
         HomelessManager.Current.ResetHomeless();
+        MainMenuMusic.Current.PlayLoseSound();
     }
 
     // Update is called once per frame
@@ -21,7 +22,6 @@ public class EndScreen : MenueWithAudio
 
     public void LoadScene()
     {
-        //MainMenuMusic.Current.PlayLoseSound();
         SceneManager.LoadScene(sceneBackClick);
     }
 
