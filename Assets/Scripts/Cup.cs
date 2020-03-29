@@ -78,4 +78,15 @@ public class Cup : MonoBehaviour
         //     food.transform.parent = null;
         // }
     }
+
+    public void FeedYourHomeless()
+    {
+        for (int c = 0; c < this.FoodInCup.Count; c++)
+        {
+            var food = this.FoodInCup[c];
+            if (food == null) continue;
+
+            HomelessManager.Current.FeedHomeless(food, this.HomeLessId);
+        }
+    }
 }

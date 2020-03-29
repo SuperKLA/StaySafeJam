@@ -25,7 +25,7 @@ public class HomelessOverviewManager : MonoBehaviour
 
     private HomelessPanel GetPanelByName(string name)
     {
-        if (name == "Hausmann")
+        if (name == "Mausmann")
             return homeless1;
         else if (name == "Doggo")
             return homeless2;

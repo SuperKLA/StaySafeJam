@@ -6,30 +6,31 @@ using UnityEngine;
 public class FoodSpawner : MonoBehaviour
 {
     public bool test = false;
+    public Transform SpawnPosition;
 
     FoodSelector foodSelector;
 
     void Start()
     {
-        foodSelector = GetComponent<FoodSelector>();
+        this.foodSelector = this.GetComponent<FoodSelector>();
     }
 
 
     private void Update()
     {
-        if (test)
+        if (this.test)
         {
-            test = false;
-            SpawnFood();
+            this.test = false;
+            this.SpawnFood();
         }
     }
 
 
     public Food SpawnFood()
     {
-        Food nextFood = foodSelector.GetFood();
+        Food nextFood = this.foodSelector.GetFood();
         if (nextFood != null)
-            Instantiate(nextFood.gameObject, Vector3.zero, GetRandomRotation());
+            Instantiate(nextFood.gameObject, this.SpawnPosition.position, this.GetRandomRotation());
 
         return nextFood;
     }
