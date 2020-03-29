@@ -119,7 +119,7 @@ MonoBehaviour:
   name: Cake
   CutSound: event:/SFX/chop_specifics/sfx_chop_chocolate
   category: 3
-  Calories: 2000
+  Calories: 3600
   Volume: 1.1745881
 --- !u!114 &1722412435557822898
 MonoBehaviour:

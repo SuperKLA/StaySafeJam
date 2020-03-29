@@ -135,7 +135,7 @@ MonoBehaviour:
   name: Meat
   CutSound: event:/SFX/chop_specifics/sfx_chop_chicken
   category: 1
-  Calories: 1000
+  Calories: 490
   Volume: 0.17293851
 --- !u!114 &8954276659599937889
 MonoBehaviour:

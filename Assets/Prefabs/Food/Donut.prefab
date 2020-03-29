@@ -135,7 +135,7 @@ MonoBehaviour:
   name: Donut
   CutSound: event:/SFX/chop_specifics/sfx_chop_chocolate
   category: 3
-  Calories: 500
+  Calories: 450
   Volume: 0.19068953
 --- !u!114 &8441290210487928780
 MonoBehaviour:

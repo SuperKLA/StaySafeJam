@@ -148,7 +148,7 @@ MonoBehaviour:
   name: Hot dog
   CutSound: event:/SFX/chop_specifics/sfx_chop_pizza
   category: 3
-  Calories: 1000
+  Calories: 900
   Volume: 0.10329466
 --- !u!114 &5488019494422614490
 MonoBehaviour:
